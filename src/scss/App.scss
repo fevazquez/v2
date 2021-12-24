@@ -1,0 +1,32 @@
+@use "sass:map";
+
+:root {
+  --main-blue: #0a192f;
+  --light-blue: #112240;
+  --lightest-blue: #233554;
+  --white: #fff;
+  --red: #ff1600;
+  --grey: #8892b0;
+  --lightest-grey: #ccd6f6;
+  --light-grey: #a8b2d1;
+  --green-tint: rgba(2, 12, 27, 0.7);
+}
+
+.App {
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+    "Verdana Ref", sans-serif;
+}
+
+.main-container {
+  margin-top: 1rem;
+}
+
+.menu {
+  float: right;
+}
+
+// .App .btn-primary{
+//   background-color: map.get($theme-colors, "primary-blue-80");
+//   border-color: map.get($theme-colors, "primary-blue-80");
+// }

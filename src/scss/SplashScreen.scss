@@ -1,0 +1,74 @@
+.splashScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #050e1b;
+
+  .img-container {
+    position: relative;
+  }
+
+  img.logo {
+    border-radius: 100px;
+    width: 6em;
+    height: 7em;
+    animation: fade 15s 1;
+  }
+
+  img.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 7rem;
+  }
+  @keyframes fade {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
+
+// .gradient-border {
+//   --border-width: 3px;
+//   width: 7em;
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: #060f1f;
+//   border-radius: 100px;
+
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     top: calc(-1 * var(--border-width));
+//     left: calc(-1 * var(--border-width));
+//     z-index: -1;
+//     width: calc(100% + var(--border-width) * 2);
+//     height: calc(100% + var(--border-width) * 2);
+//     background: linear-gradient(
+//       60deg,
+//       hsl(0, 63%, 87%),
+//       hsl(0, 72%, 74%),
+//       hsl(0, 39%, 46%),
+//       hsl(359, 73%, 42%),
+//       hsl(359, 92%, 47%)
+//     );
+//     background-size: 300% 300%;
+//     background-position: 0 50%;
+//     border-radius: calc(20 * var(--border-width));
+//     animation: moveGradient 4s alternate infinite;
+//   }
+// }
+
+// @keyframes moveGradient {
+//   50% {
+//     background-position: 100% 50%;
+//   }
+// }

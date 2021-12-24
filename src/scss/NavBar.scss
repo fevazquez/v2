@@ -1,0 +1,56 @@
+.navbar {
+  background-color: var(--main-blue);
+  border-bottom: 1px solid var(--red);
+  .logo {
+    width: 4rem;
+    height: 3rem;
+  }
+  .navbar-text {
+    padding: 0.5rem;
+  }
+  .navbar-nav {
+    .hamburger-react {
+      top: 0;
+      right: 0;
+      position: fixed;
+      z-index: 10;
+    }
+    .nav-item .nav-link {
+      font-size: 1em;
+      margin: 0 0.5em;
+      color: var(--grey);
+      text-decoration: none;
+    }
+    .nav-item .nav-link:visited {
+      color: var(--grey);
+    }
+    .nav-item .nav-link:hover {
+      color: var(--white);
+    }
+    a.resume.nav-link {
+      border: 1px solid var(--red);
+      border-radius: 4px;
+      padding: 0.5em 1.25em;
+    }
+    a.resume.nav-link:hover {
+      background-color: var(--lightest-blue);
+    }
+    .resume {
+      border-radius: 4px;
+      margin-top: 1.5em;
+      padding: 1em 0;
+      border: 1px solid var(--red);
+    }
+    .resume:hover {
+      background-color: var(--lightest-blue);
+    }
+    .nav-icon {
+      padding: 0.5rem;
+      color: var(--white);
+      cursor: pointer;
+    }
+    .nav-icon:hover {
+      color: var(--white);
+    }
+  }
+}
