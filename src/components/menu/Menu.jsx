@@ -27,7 +27,7 @@ const Menu = ({ open, ...props }) => {
             </a>
         </StyledMenu>
     );
-}
+};
 
 Menu.propTypes = {
     open: bool.isRequired,

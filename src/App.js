@@ -5,9 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global'
 import { theme } from './theme'
 
-import SplashScreen from './components/SplashScreen';
-import NavBar from './components/NavBar';
-import HomePage from './components/HomePage';
+import  { SplashScreen, NavBar, HomePage } from './components';
 
 import "./scss/App.scss"
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -35,7 +33,7 @@ function App() {
       ): (
         <>
           <NavBar open={open} setOpen={setOpen} node={node} menuId={menuId} />
-          <HomePage />
+          <HomePage open={open} />
         </>
       )}
       

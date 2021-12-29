@@ -6,10 +6,23 @@
   --lightest-blue: #233554;
   --white: #fff;
   --red: #ff1600;
+  --dark-grey: #495670;
   --grey: #8892b0;
   --lightest-grey: #ccd6f6;
   --light-grey: #a8b2d1;
   --green-tint: rgba(2, 12, 27, 0.7);
+
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
 }
 
 .App {
@@ -17,16 +30,3 @@
     "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
     "Verdana Ref", sans-serif;
 }
-
-.main-container {
-  margin-top: 1rem;
-}
-
-.menu {
-  float: right;
-}
-
-// .App .btn-primary{
-//   background-color: map.get($theme-colors, "primary-blue-80");
-//   border-color: map.get($theme-colors, "primary-blue-80");
-// }
