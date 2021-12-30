@@ -9,7 +9,7 @@ const Socials =()=> {
     let socialMedia = [
         {
             name: 'GitHub',
-            url: 'https://github.com/fernanflow4793',
+            url: 'https://github.com/fevazquez',
           },
           {
             name: 'Instagram',

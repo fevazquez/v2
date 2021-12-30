@@ -10,6 +10,7 @@
   --grey: #8892b0;
   --lightest-grey: #ccd6f6;
   --light-grey: #a8b2d1;
+  --red-tint: rgba(27, 3, 2, 0.7);
   --green-tint: rgba(2, 12, 27, 0.7);
 
   --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -25,8 +26,8 @@
   --fz-heading: 32px;
 }
 
-.App {
-  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
-    "Verdana Ref", sans-serif;
-}
+// .App {
+//   font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+//     "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana,
+//     "Verdana Ref", sans-serif;
+// }

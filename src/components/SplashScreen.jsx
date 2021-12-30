@@ -8,7 +8,7 @@ const SplashScreen =()=> {
     return(
         <div className="splashScreen">
             <div class="img-container">
-                <img src={Circle} className="circle" alt="" />
+                {/* <img src={Circle} className="circle" alt="" /> */}
                 <img src={PortfolioLogo} className="logo" alt="Fernando Vazquez" />
             </div>
         </div>
