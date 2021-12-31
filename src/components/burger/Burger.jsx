@@ -5,7 +5,7 @@ import { Squash } from 'hamburger-react'
 const Burger = ({ open, setOpen, ...props }) => {
   return (
         <div className="burger"> 
-             <Squash toggled={open} toggle={setOpen} color="#ff1600" onClick={() => setOpen(!open)} {...props}/>
+             <Squash toggled={open} toggle={setOpen} color="#00fffb" onClick={() => setOpen(!open)} {...props}/>
         </div>
   );
 }

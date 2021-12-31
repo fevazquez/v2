@@ -15,7 +15,7 @@ export const StyledBurger = styled.button`
   z-index: 10;
 
   span {
-    background: ${({ theme, open }) => open ? theme.red : theme.red};
+    background: ${({ theme, open }) => open ? theme.blue : theme.blue};
     border-radius: 10px;
     transition: all 0.3s linear;
     width: 2.5em;

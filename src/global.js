@@ -1,34 +1,61 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  html, body {
-      margin: 0;
-      padding: 0;
+  html {
+    box-sizing: border-box;
+    width: 100%;
+    scroll-behavior: smooth;
   }
 
   body {
     font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-    background: var(--main-blue);
+    background: var(--black);
+    margin: 0;
     height: 100%;
     overflow-x: hidden;
     color: var(--grey);
     text-rendering: optimizeLegibility;
+
+  }
+
+  section {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1000px;
+    @media (max-width: 768px) {
+      padding: 80px 0;
+    }
+    @media (max-width: 480px) {
+      padding: 60px 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    color: var(--lightest-grey);
+    line-height: 1.1;
   }
 
   /* Scrollbar Styles */
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--dark-grey) var(--main-blue);
+    scrollbar-color: var(--dark-grey) var(--black);
   }
   body::-webkit-scrollbar {
     width: 12px;
   }
   body::-webkit-scrollbar-track {
-    background: var(--main-blue);
+    background: var(--black);
   }
   body::-webkit-scrollbar-thumb {
     background-color: var(--dark-grey);
-    border: 3px solid var(--main-blue);
+    border: 3px solid var(--black);
     border-radius: 10px;
   }
 
@@ -63,7 +90,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: var(--transition);
     &:hover,
     &:focus {
-      color: var(--red);
+      color: var(--blue);
     }
 
     &.inline-link {
@@ -73,41 +100,9 @@ export const GlobalStyles = createGlobalStyle`
 
   p {
     margin: 0 0 15px 0;
-    &:last-child,
-    &:last-of-type {
-      margin: 0;
-    }
+    
     & > a {
-      display: inline-block;
-      text-decoration: none;
-      text-decoration-skip-ink: auto;
-      position: relative;
-      transition: var(--transition);
-      color: var(--red);
-      &:hover,
-      &:focus,
-      &:active {
-        color: var(--red);
-        outline: 0;
-        &:after {
-          width: 100%;
-        }
-        & > * {
-          color: var(--red) !important;
-          transition: var(--transition);
-        }
-      }
-      &:after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 1px;
-        position: relative;
-        bottom: 0.37em;
-        background-color: var(--red);
-        transition: var(--transition);
-        opacity: 0.5;
-      }
+      ${({ theme }) => theme.inlineLink};
     }
     & > code {
       background-color: var(--light-blue);
@@ -132,10 +127,49 @@ export const GlobalStyles = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: var(--red);
+          color: var(--blue);
         }
       }
     }
+  }
+
+  .big-heading {
+    margin: 0;
+    font-size: clamp(40px, 7vw, 65px);
+  }
+
+  .numbered-heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0 40px;
+    width: 100%;
+    font-size: clamp(26px, 5vw, var(--fz-heading));
+    white-space: nowrap;
+    &:after {
+      content: '';
+      display: block;
+      position: relative;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: var(--lightest-blue);
+      @media (max-width: 1080px) {
+        width: 200px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .overline {
+    color: var(--blue);
+    font-size: var(--fz-md);
+    font-weight: 400;
   }
 `
 

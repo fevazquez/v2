@@ -8,7 +8,7 @@ import Resume from '../Vazquez_Fernando.pdf'
 import Burger from './burger';
 import Menu from './menu';
 
-import '../scss/NavBar.scss'
+import '../scss/NavBar.scss';
 
 const NavBar = ({open, setOpen, node, menuId}) => {
     const [isMobile, setIsMobile] = useState(false);
@@ -30,7 +30,7 @@ const NavBar = ({open, setOpen, node, menuId}) => {
     let pages = ['About', 'Experience', 'Projects', 'Contact'];
 
     return (
-        <Navbar>
+        <Navbar className="fixed-top">
             <Container>
                 <Navbar.Brand href="/">
                     <img src={PortfolioLogo} className="logo" alt="Fernando Vazquez" />
@@ -50,7 +50,7 @@ const NavBar = ({open, setOpen, node, menuId}) => {
                             {pages.map((page, index) => {
                                 return (
                                     <Nav.Item id={index}> 
-                                        <Nav.Link>{page}</Nav.Link>
+                                        <Nav.Link href={`#${page.toLowerCase()}`}>{page}</Nav.Link>
                                     </Nav.Item>
                                 );
                             })}

@@ -12,13 +12,13 @@ const Socials =()=> {
             url: 'https://github.com/fevazquez',
           },
           {
+            name: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/',
+          },
+          {
             name: 'Instagram',
             url: 'https://www.instagram.com/itsfernanflow/',
           },
-        //   {
-        //     name: 'Linkedin',
-        //     url: 'https://www.linkedin.com/in/',
-        //   },
     ];
 
     const isHome = true;

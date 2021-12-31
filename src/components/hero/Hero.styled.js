@@ -2,30 +2,27 @@ import styled from 'styled-components';
 
 export const StyledHero = styled.section`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
     align-items: flex-start;
+
     min-height: 100vh;
     padding: 0;
+    
     @media (max-width: 480px) and (min-height: 700px) {
         padding-bottom: 10vh;
     }
 
     h1 {
         margin: 0 0 30px 4px;
-        color: var(--red);
+        color: var(--blue);
         font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
         font-weight: 400;
+
         @media (max-width: 480px) {
             margin: 0 0 20px 2px;
         }
-    }
-
-    h2, h3 {
-        margin: 0;
-        font-size: clamp(40px, 8vw, 80px);
     }
 
     h3 {
@@ -37,6 +34,15 @@ export const StyledHero = styled.section`
     p {
         margin: 20px 0 0;
         max-width: 540px;
+    }
+
+    .email-link {
+        ${({ theme }) => theme.bigButton};
+        margin-top: 50px;
+    }
+
+    .email-link:hover {
+        color: var(--white);
     }
 `;
 

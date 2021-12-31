@@ -4,6 +4,7 @@ import {
   IconExternal,
   IconGitHub,
   IconInstagram,
+  IconLinkedIn,
 } from './';
 
 const Icon = ({ name }) => {
@@ -12,6 +13,8 @@ const Icon = ({ name }) => {
       return <IconGitHub />;
     case 'Instagram':
       return <IconInstagram />;
+    case 'LinkedIn':
+      return <IconLinkedIn />;
     default:
       return <IconExternal />;
   }

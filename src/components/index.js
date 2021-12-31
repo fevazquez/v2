@@ -7,3 +7,5 @@ export { default as HomePage } from './HomePage';
 export { default as Side } from './side';
 export { default as Socials} from './socials';
 export { default as Email } from './email';
+
+export { default as About } from './about';

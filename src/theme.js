@@ -2,10 +2,12 @@ import { css } from 'styled-components';
 
 export const theme = {
     main_blue: '#0a192f',
-    ligh_blue: '#112240',
+    light_blue: '#112240',
     lightest_blue: '#233554',
     white: '#fff',
-    red: '#ff1600',
+    darker_black: '#141414',
+    lighter_black: '#313131',
+    blue: '#00fffb',
     grey: '#8892b0',
     lightest_grey: '#ccd6f6',
     light_grey: '#a8b2d1',
@@ -18,17 +20,17 @@ export const theme = {
     text-decoration-skip-ink: auto;
     position: relative;
     transition: var(--transition);
-    color: var(--green);
+    color: var(--blue);
     &:hover,
     &:focus,
     &:active {
-      color: var(--green);
+      color: var(--blue);
       outline: 0;
       &:after {
         width: 100%;
       }
       & > * {
-        color: var(--green) !important;
+        color: var(--blue) !important;
         transition: var(--transition);
       }
     }
@@ -38,10 +40,40 @@ export const theme = {
       width: 0;
       height: 1px;
       position: relative;
-      bottom: 0.37em;
-      background-color: var(--green);
+      bottom: 0.2em;
+      background-color: var(--blue);
       transition: var(--transition);
-      opacity: 0.5;
+      opacity: 0.6;
     }
   `,
+  bigButton: css`
+    color: var(--blue);
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--blue-tint);
+      outline: none;
+    }
+    &:after {
+      display: none !important;
+    }
+  `,
+
+  boxShadow: css`
+  box-shadow: 0 10px 30px -15px var(--blue-shadow);
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    box-shadow: 0 20px 30px -15px var(--blue-shadow);
+  }
+`,
 }

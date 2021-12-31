@@ -1,6 +1,6 @@
 .navbar {
-  background-color: var(--main-blue);
-  border-bottom: 1px solid var(--red);
+  background-color: var(--black);
+  border-bottom: 1px solid var(--blue);
   .logo {
     width: 4rem;
     height: 3rem;
@@ -28,18 +28,19 @@
       color: var(--white);
     }
     a.resume.nav-link {
-      border: 1px solid var(--red);
+      color: var(--blue);
+      border: 1px solid var(--blue);
       border-radius: 4px;
       padding: 0.5em 1.25em;
     }
     a.resume.nav-link:hover {
-      background-color: var(--lightest-blue);
+      background-color: var(--blue-tint);
     }
     .resume {
       border-radius: 4px;
       margin-top: 1.5em;
       padding: 1em 0;
-      border: 1px solid var(--red);
+      border: 1px solid var(--blue);
     }
     .resume:hover {
       background-color: var(--lightest-blue);
