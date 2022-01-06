@@ -1,23 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import Hero from './hero';
-import Socials from './socials';
-import Email from './email';
-import About from './about';
-import Contact from './contact';
+import Hero from "./hero";
+import Socials from "./socials";
+import Email from "./email";
+import About from "./about";
+import Contact from "./contact";
+import Experience from "./experience";
+import Footer from "./footnote";
 
-import "../scss/HomePage.scss"
+import "../scss/HomePage.scss";
 
 const HomePage = () => {
-    return (
-        <div className="main-container">
-            <Hero />
-            <Socials />
-            <Email />
-            <About />
-            <Contact />
-        </div>
-    );
+  return (
+    <div className="main-container">
+      <Hero />
+      <Socials />
+      <Email />
+      <About />
+      <Experience />
+      <Contact />
+      <Footer />
+    </div>
+  );
 };
 
 export default HomePage;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledSocialList = styled.ul`
     display: flex;
@@ -32,6 +32,5 @@ export const StyledSocialList = styled.ul`
             width: 20px;
             height: 20px;
         }
-    }
-    
+    } 
 `;

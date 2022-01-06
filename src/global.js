@@ -90,7 +90,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: var(--transition);
     &:hover,
     &:focus {
-      color: var(--blue);
+      color: var(--main);
     }
 
     &.inline-link {
@@ -127,7 +127,7 @@ export const GlobalStyles = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: var(--blue);
+          color: var(--main);
         }
       }
     }
@@ -167,9 +167,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .overline {
-    color: var(--blue);
+    color: var(--main);
     font-size: var(--fz-md);
     font-weight: 400;
   }
-`
-
+`;

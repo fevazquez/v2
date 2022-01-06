@@ -1,7 +1,8 @@
 /* Fade up */
 .fadeup-enter {
   opacity: 0.01;
-  transform: translateY(20px);
+  transform: translateY(-30px);
+  // transform: translateX(80px);
   transition: opacity 300ms var(--easing), transform 300ms var(--easing);
 }
 .fadeup-enter-active {

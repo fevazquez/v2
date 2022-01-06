@@ -1,28 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { StyledSideElement } from './Side.styled'
+import React, { useState, useEffect } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { StyledSideElement } from "./Side.styled";
 
-const Side =({ children, orientation })=> {
-    const [isMounted, setIsMounted] = useState(false);
-    const loaderDelay = 2000;
-    const isHome = true;
+const Side = ({ children, orientation }) => {
+  const [isMounted, setIsMounted] = useState(false);
+  const loaderDelay = 2000;
+  const isHome = true;
 
-    useEffect(() => {
-        const timeout = setTimeout(() => setIsMounted(true), loaderDelay);
-        return () => clearTimeout(timeout);
-    }, []);
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsMounted(true), loaderDelay);
+    return () => clearTimeout(timeout);
+  }, []);
 
-    return (
-        <StyledSideElement orientation={orientation}>
-            <TransitionGroup component={null}>
-                {isMounted && (
-                    <CSSTransition classNames={isHome ? 'fade' : ''} timeout={loaderDelay ? 2000 : 0}>
-                        {children}
-                    </CSSTransition>
-                )}
-            </TransitionGroup>
-        </StyledSideElement>
-    );
-}
+  return (
+    <StyledSideElement orientation={orientation}>
+      <TransitionGroup component={null}>
+        {isMounted && (
+          <CSSTransition
+            classNames={isHome ? "fade" : ""}
+            timeout={loaderDelay ? 2000 : 0}
+          >
+            {children}
+          </CSSTransition>
+        )}
+      </TransitionGroup>
+    </StyledSideElement>
+  );
+};
 
 export default Side;

@@ -1,55 +1,56 @@
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 export const theme = {
-    main_blue: '#0a192f',
-    light_blue: '#112240',
-    lightest_blue: '#233554',
-    white: '#fff',
-    darker_black: '#141414',
-    lighter_black: '#313131',
-    blue: '#00fffb',
-    grey: '#8892b0',
-    lightest_grey: '#ccd6f6',
-    light_grey: '#a8b2d1',
+  main_blue: "#0a192f",
+  light_blue: "#112240",
+  lightest_blue: "#233554",
+  white: "#fff",
+  darker_black: "#141414",
+  lighter_black: "#313131",
+  blue: "#00fffb",
+  grey: "#8892b0",
+  main: "#32cd32",
+  lightest_grey: "#ccd6f6",
+  light_grey: "#a8b2d1",
 
-    mobile: '576px',
+  mobile: "576px",
 
-    inlineLink: css`
+  inlineLink: css`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
     transition: var(--transition);
-    color: var(--blue);
+    color: var(--main);
     &:hover,
     &:focus,
     &:active {
-      color: var(--blue);
+      color: var(--main);
       outline: 0;
       &:after {
         width: 100%;
       }
       & > * {
-        color: var(--blue) !important;
+        color: var(--main) !important;
         transition: var(--transition);
       }
     }
     &:after {
-      content: '';
+      content: "";
       display: block;
       width: 0;
       height: 1px;
       position: relative;
       bottom: 0.2em;
-      background-color: var(--blue);
+      background-color: var(--main);
       transition: var(--transition);
       opacity: 0.6;
     }
   `,
   bigButton: css`
-    color: var(--blue);
+    color: var(--main);
     background-color: transparent;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--main);
     border-radius: 4px;
     padding: 1.25rem 1.75rem;
     font-size: var(--fz-sm);
@@ -60,7 +61,7 @@ export const theme = {
     &:hover,
     &:focus,
     &:active {
-      background-color: var(--blue-tint);
+      background-color: var(--main-tint);
       outline: none;
     }
     &:after {
@@ -69,11 +70,29 @@ export const theme = {
   `,
 
   boxShadow: css`
-  box-shadow: 0 10px 30px -15px var(--blue-shadow);
-  transition: var(--transition);
-  &:hover,
-  &:focus {
-    box-shadow: 0 20px 30px -15px var(--blue-shadow);
-  }
-`,
-}
+    box-shadow: 0 10px 30px -15px var(--blue-shadow);
+    transition: var(--transition);
+    &:hover,
+    &:focus {
+      box-shadow: 0 20px 30px -15px var(--blue-shadow);
+    }
+  `,
+
+  fancyList: css`
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: var(--fz-lg);
+    li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      &:before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: var(--main);
+      }
+    }
+  `,
+};

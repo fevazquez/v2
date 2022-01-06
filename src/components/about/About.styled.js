@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -27,10 +27,10 @@ export const StyledText = styled.div`
       padding-left: 20px;
       font-size: var(--fz-xs);
       &:before {
-        content: '▹';
+        content: "▹";
         position: absolute;
         left: 0;
-        color: var(--blue);
+        color: var(--main);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -51,7 +51,7 @@ export const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: 5px;
-    background-color: var(--blue);
+    // background-color: var(--main);
 
     @media (max-width: 768px) {
       margin-bottom: 4em;
@@ -72,8 +72,8 @@ export const StyledPic = styled.div`
     }
     .img {
       position: relative;
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
+      // mix-blend-mode: multiply;
+      // filter: grayscale(100%) contrast(1);
       transition: var(--transition);
       img {
         border-radius: 5px;
@@ -81,7 +81,7 @@ export const StyledPic = styled.div`
     }
     &:before,
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -96,7 +96,7 @@ export const StyledPic = styled.div`
       mix-blend-mode: screen;
     }
     &:after {
-      border: 2px solid var(--blue);
+      border: 2px solid var(--main);
       top: 20px;
       left: 20px;
       z-index: -1;
