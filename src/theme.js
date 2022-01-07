@@ -15,6 +15,21 @@ export const theme = {
 
   mobile: "576px",
 
+  link: css`
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--main);
+      outline: 0;
+    }
+  `,
+
   inlineLink: css`
     display: inline-block;
     text-decoration: none;
