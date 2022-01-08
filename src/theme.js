@@ -134,4 +134,9 @@ export const theme = {
       }
     }
   `,
+  resetList: css`
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  `,
 };

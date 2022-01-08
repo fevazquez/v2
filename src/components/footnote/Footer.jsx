@@ -33,9 +33,9 @@ const Footer = () => {
       </StyledSocialLinks>
       <StyledCredit>
         <div>Built by Fernando Vazquez</div>
-        {/* <a href="https://github.com/bchiang7/v4">
-          <div>Inspired by Brittany Chiang</div>
-        </a> */}
+        <a href="https://github.com/bchiang7/v4">
+          <div>With inspiration from Brittany Chiang</div>
+        </a>
       </StyledCredit>
     </StyledFooter>
   );

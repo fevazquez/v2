@@ -38,7 +38,7 @@ const Experience = () => {
       abbreviation: "Socksmith",
       date: "March 2016 - August 2018",
       description:
-        "Established new company workstations, setting up user profiles in the database and setting their appropriate permissions with the inventory management software. I overlooked inventory anf fixed any issues and bugs in the system using SQL, excel, and python scripts",
+        "Established new company workstations, setting up user profiles in the database and setting their appropriate permissions with the inventory management software. I overlooked inventory and fixed any issues and bugs in the system using SQL, excel, and Python scripts",
       url: "https://www.socksmith.com/",
     },
   ];

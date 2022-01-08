@@ -28,7 +28,7 @@ const MobileMenu = ({ jobs }) => {
                   <h3>
                     <span>{job.title}</span>
                     <span className="company">
-                      &nbsp;@&nbsp;
+                      &nbsp;|&nbsp;
                       <a href={job.url} className="inline-link">
                         {job.company}
                       </a>
