@@ -62,6 +62,30 @@ export const theme = {
       opacity: 0.6;
     }
   `,
+
+  smallButton: css`
+    color: var(--main);
+    background-color: transparent;
+    border: 1px solid var(--main);
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    font-size: var(--fz-xs);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--main-tint);
+      outline: none;
+    }
+    &:after {
+      display: none !important;
+    }
+  `,
+
   bigButton: css`
     color: var(--main);
     background-color: transparent;
