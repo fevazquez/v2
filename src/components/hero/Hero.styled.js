@@ -1,6 +1,19 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.section`
+  .inner {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 10px;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .heroText {
+    padding-top: 7em;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,12 +25,15 @@ export const StyledHero = styled.section`
 
   @media (max-width: 480px) and (min-height: 700px) {
     padding-bottom: 10vh;
+    .heroText {
+      padding-top: 0;
+    }
   }
 
   h1 {
-    margin: 0 0 30px 4px;
+    margin: 0 0 15px 4px;
     color: var(--main);
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    font-size: clamp(var(--fz-sm), 5vw, var(--fz-xl));
     font-weight: 400;
 
     @media (max-width: 480px) {
@@ -29,6 +45,7 @@ export const StyledHero = styled.section`
     margin-top: 10px;
     color: var(--grey);
     line-height: 0.9;
+    font-size: clamp(20px, 4vw, 30px);
   }
 
   p {
@@ -37,11 +54,18 @@ export const StyledHero = styled.section`
   }
 
   .email-link {
-    ${({ theme }) => theme.bigButton};
+    // ${({ theme }) => theme.bigButton};
     margin-top: 50px;
   }
 
   .email-link:hover {
     color: var(--white);
+  }
+`;
+
+export const StyledPic = styled.div`
+  max-width: 300px;
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

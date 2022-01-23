@@ -11,7 +11,8 @@ const Experience = () => {
       company: "Nisum",
       abbreviation: "Nisum",
       date: "September 2021 - Present",
-      description: "Description 1",
+      description:
+        "During my time here, I have written modern and robust code for a diverse array of internal projects using React, Javascript, Java, and Springboot. I have also setup CI/CD pipelines for containerized applications using Docker, Jenkins, and Azure Kubernetes Cluster",
       url: "https://www.nisum.com/",
     },
     {

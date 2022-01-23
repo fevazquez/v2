@@ -31,22 +31,22 @@ const Projects = () => {
       img: "https://lh3.googleusercontent.com/7Mn1Tpiys8h5tCeZ9MRDyroIgI0h7fgXDTRtIEvWWpf7__cJAdXuf-Iyc3yEmWbKmtPcQdtQelk3arbqYuylywADUgHHwpmL8tU3MRaMwN00R4XtZqUJPaFtembQ38kP3ucwCOSieB6ZFsOgj-3Z1SGMpvsfK5LtUbX3arywfn0xX_DSfmeOb_IHyj-7_Vvv33RAlaYEEKN0c9G-ry9hq55kI59a5pgLJ8QO4__XDCDjsIDDgaeX6cclsHI_tFngs2vu_G72fgvn0xCzlbCecTMuSHblXO3ZUrP8ww-EsEJXovDLYuX-UMay1KfWTVRvceGKt6PKvqQS20PfbkTk_uXk_SSxNYc8P1y1nM0A7X8kfIMPjxFyH9NmnT80zrFHWKP-DLmI6g07wHd58jLUugme1uj-LHZvwHF60pONrWFqA1UVuhvPpKrkkq3QrvQeP3GfSOB0aNZen7Ss3PpR3kax9g9wplRRvZB06RgyGdCUZm9GXASCJfCl1vpxFdDVK3hm5KfuzoluLdIyNtaRdF0lJznMI7DytOPeV6BFpfJQSlQ_viPUljNBlNwoV8BXbtHc3apUjlNMzW0AwNS_4C6TBcH5NnpwWDI7m5MYSS7IX96JNQWfTvXSB1BZBrmVSbUI4JkKV2cOI7NQyCIib9pRCjWR-eiAIwLzbvPf1ZmyBvN0_7ad5poIo6Ih9fN6V1v6ivCwFCMXTNMbqj1X0g=w1941-h1256-no?authuser=2",
       link: "https://github.com/jamesbasa/TryClubs",
     },
-    {
-      title: "Crimes and Police Dispatch correlation",
-      summary:
-        "Worked with a team to explore the relationships between the percentage of minorities, number of crimes, and police dispatch and response time in Chicago",
-      technologies: ["Jupyter Notebook", "Matplotlib", "Numpy", "Pandas"],
-      img: "https://lh3.googleusercontent.com/76Sr4MENKHGzJQJEPe944cLkq2E33qCJmkqkPrcOCd_xj2bQEqyn_XbEppKEDy8KSXINop5_UXY6BkboOJz_dW_zVkD3FD-9TSpnMenWAdqScM2_d2Slchhnl_adJa8ynuRXOvpBoa2aeo6P7CVcJsJS539SWXh6fHrTtyh1euzH2j7Euy9xH2H0-pP-aTC6JjDnK5dBCJGVYqNefWHZuZ0Jm1W7TOj4fWJMFSqDDgiQAhrz8fykuWciKkaOFo4ThgD0C8SJtShVpC4d2oya0I8BVOv2iIIpLhBaGHC_ymMWa1FVfit2YNl2hOOoIfj865-_7wX6gUch6dxv9DrseZMGY9lWSGb1Wq_VrrnPuiPVWnNmrUWTH_WFicFRPaGm0D24_HXoMDTp7sGSaGz8nix_ZY8vgscFWAhofcQI7DX4-H4zjzKsxW6_7gmg2XLyXyLFgf_Bm2IL4og5qD7bsb7NRoLyR4NZEePITUjRcrq8cW6eI0W_h3fZdQP78w1nGdQg9tOWepX5PTAtOfARUgksUyVaHZdNkb3rBEu58VnBaMiVrvouoKTNJFt3nN4RoHJaoBB1qHUO3aVgMgtu5ZgQwzusCbwj8TH9Ycifv7d9VL5tsCPd2DRCNNZ1sh_YpxYEEz1TlZXGrKQ7fLxnt--Oh7UtDGyrSb0f4fxfKoAZ2zIMI5iVK49w84y7PfMkbKn5kOsnU5rkyczqQNBeKw=w1432-h1282-no?authuser=2",
-      link: "https://github.com/fevazquez/dispatch-correlation/blob/master/FinalProject%20.ipynb",
-    },
-    {
-      title: "Machine Learning - Convoluted Neural Networks",
-      summary:
-        "Worked with a team to explore the relationships between the percentage of minorities, number of crimes, and police dispatch and response time in Chicago",
-      technologies: ["Pytorch", "Numpy", "Google Colab"],
-      img: "https://lh3.googleusercontent.com/rned8A-uCfKBIMjwr0jXy5APaYaCpgtxFu_5EmztWY_f1k9qpfM3gkAKtvKenNOi_vMnIoLI9A8DwrctEDNpR53L6siwX9zqsabRTk380ktHWRzNf9miC1S5AjijFKEZPGLniPSxAH5V4-6u_r8YWBac22FUhZsuWzJsxR1sDLqPMQL_xrNKDYfWj_RGN4yeNhQeOX4Bt_Op3_xAWXze2nQIeof9bFKgW6hZk9WeFqARPjxlnyowgBew5FRrSVNNBBz7QluJX_5vcgl6zUpgrPo2bEWaag3KnFN7NtP9vrPa9Fn-rQFvo1B3CNMjL_gY67rgvJYFj0Wh7OtgVowJSAeSJ57UhPIHd7sj0LJef0c2fF2Uh2FHWdg56b8uswngSOHUwRzoBsLoyMbTMsSjIfp_DvpNL9n78LPYZHZ1MMCSTLlswsrE9GbR54QKnZ79ESYE9HFwkOCio38p0z4twsBZX_MuR5qpLdCQHUL3JiUSGtNmv1ILTb363dVgBB3rPFCOOm417yW7nMxUgJPicadpjLc-cFtA4mav6C0gA2LCZe3UQsjE2eKapyBgb0BouN0ojVWY4mQj3Z8Lrs73UKUmcFGdPj3RWIK_B81AB63oPYEoXt6QJ6FTvIjGcXnHN7GEncWmYIYe7jTiMeQpukUy7Bjc1-f7JQFQE0IhIw0y3yQtFEXRyyMDIGML97MVmiIy136ZMfUW7J7Itv8VlA=w1185-h926-no?authuser=2",
-      link: "https://colab.research.google.com/drive/12ghS-lpvIXCMi_6rnVBA3ZUlIEcjrH6Y?usp=sharing",
-    },
+    // {
+    //   title: "Crimes and Police Dispatch correlation",
+    //   summary:
+    //     "Worked with a team to explore the relationships between the percentage of minorities, number of crimes, and police dispatch and response time in Chicago",
+    //   technologies: ["Jupyter Notebook", "Matplotlib", "Numpy", "Pandas"],
+    //   img: "https://lh3.googleusercontent.com/76Sr4MENKHGzJQJEPe944cLkq2E33qCJmkqkPrcOCd_xj2bQEqyn_XbEppKEDy8KSXINop5_UXY6BkboOJz_dW_zVkD3FD-9TSpnMenWAdqScM2_d2Slchhnl_adJa8ynuRXOvpBoa2aeo6P7CVcJsJS539SWXh6fHrTtyh1euzH2j7Euy9xH2H0-pP-aTC6JjDnK5dBCJGVYqNefWHZuZ0Jm1W7TOj4fWJMFSqDDgiQAhrz8fykuWciKkaOFo4ThgD0C8SJtShVpC4d2oya0I8BVOv2iIIpLhBaGHC_ymMWa1FVfit2YNl2hOOoIfj865-_7wX6gUch6dxv9DrseZMGY9lWSGb1Wq_VrrnPuiPVWnNmrUWTH_WFicFRPaGm0D24_HXoMDTp7sGSaGz8nix_ZY8vgscFWAhofcQI7DX4-H4zjzKsxW6_7gmg2XLyXyLFgf_Bm2IL4og5qD7bsb7NRoLyR4NZEePITUjRcrq8cW6eI0W_h3fZdQP78w1nGdQg9tOWepX5PTAtOfARUgksUyVaHZdNkb3rBEu58VnBaMiVrvouoKTNJFt3nN4RoHJaoBB1qHUO3aVgMgtu5ZgQwzusCbwj8TH9Ycifv7d9VL5tsCPd2DRCNNZ1sh_YpxYEEz1TlZXGrKQ7fLxnt--Oh7UtDGyrSb0f4fxfKoAZ2zIMI5iVK49w84y7PfMkbKn5kOsnU5rkyczqQNBeKw=w1432-h1282-no?authuser=2",
+    //   link: "https://github.com/fevazquez/dispatch-correlation/blob/master/FinalProject%20.ipynb",
+    // },
+    // {
+    //   title: "Machine Learning - Convoluted Neural Networks",
+    //   summary:
+    //     "Worked with a team to explore the relationships between the percentage of minorities, number of crimes, and police dispatch and response time in Chicago",
+    //   technologies: ["Pytorch", "Numpy", "Google Colab"],
+    //   img: "https://lh3.googleusercontent.com/rned8A-uCfKBIMjwr0jXy5APaYaCpgtxFu_5EmztWY_f1k9qpfM3gkAKtvKenNOi_vMnIoLI9A8DwrctEDNpR53L6siwX9zqsabRTk380ktHWRzNf9miC1S5AjijFKEZPGLniPSxAH5V4-6u_r8YWBac22FUhZsuWzJsxR1sDLqPMQL_xrNKDYfWj_RGN4yeNhQeOX4Bt_Op3_xAWXze2nQIeof9bFKgW6hZk9WeFqARPjxlnyowgBew5FRrSVNNBBz7QluJX_5vcgl6zUpgrPo2bEWaag3KnFN7NtP9vrPa9Fn-rQFvo1B3CNMjL_gY67rgvJYFj0Wh7OtgVowJSAeSJ57UhPIHd7sj0LJef0c2fF2Uh2FHWdg56b8uswngSOHUwRzoBsLoyMbTMsSjIfp_DvpNL9n78LPYZHZ1MMCSTLlswsrE9GbR54QKnZ79ESYE9HFwkOCio38p0z4twsBZX_MuR5qpLdCQHUL3JiUSGtNmv1ILTb363dVgBB3rPFCOOm417yW7nMxUgJPicadpjLc-cFtA4mav6C0gA2LCZe3UQsjE2eKapyBgb0BouN0ojVWY4mQj3Z8Lrs73UKUmcFGdPj3RWIK_B81AB63oPYEoXt6QJ6FTvIjGcXnHN7GEncWmYIYe7jTiMeQpukUy7Bjc1-f7JQFQE0IhIw0y3yQtFEXRyyMDIGML97MVmiIy136ZMfUW7J7Itv8VlA=w1185-h926-no?authuser=2",
+    //   link: "https://colab.research.google.com/drive/12ghS-lpvIXCMi_6rnVBA3ZUlIEcjrH6Y?usp=sharing",
+    // },
   ];
   return (
     <StyledProjectsSection id="projects">

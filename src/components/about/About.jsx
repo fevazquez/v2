@@ -36,16 +36,12 @@ const About = () => {
             </p>
             <p>
               Since then, I have had the privilege of working as a{" "}
-              <a href="http://sopac-csrc.ucsd.edu/">research assistant</a>,{" "}
+              <a href="http://sopac-csrc.ucsd.edu/">research assistant</a>, and{" "}
               <a href="https://rocketproplab.org/">
                 a student lead avionics project
               </a>
-              , and{" "}
-              <a href="https://rocketproplab.org/">
-                a leading global digital commerce firm
-              </a>
               . My main focus currently is on DevOps operations to deliver high
-              quality products at <a href="https://www.nisum.com/">Nisum</a> for
+              quality products for <a href="https://www.nisum.com/">Nisum</a>{" "}
               clients.
             </p>
             <p>

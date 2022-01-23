@@ -3,7 +3,7 @@ FROM node as build-deps
 WORKDIR /usr/src/app
 COPY package*.json ./
 COPY . ./
-RUN npm install --save react react-dom react-scripts
+RUN npm ci --save react react-dom react-scripts
 RUN npm run build
 
 # Stage 2 - production environment 
