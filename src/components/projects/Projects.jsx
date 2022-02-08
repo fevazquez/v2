@@ -2,8 +2,6 @@ import React from "react";
 
 import { StyledProjectsSection, StyledProject } from "./Projects.styled";
 
-import SlideShow from "./SlideShow";
-
 import { Icon } from "../icons";
 const Projects = () => {
   const projects = [

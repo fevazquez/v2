@@ -17,16 +17,16 @@ const Menu = ({ open, ...props }) => {
 
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      {pages.map((page, index) => {
+      {pages.map((page, idx) => {
         return (
-          <Nav.Item key={index}>
+          <Nav.Item key={idx}>
             <Nav.Link href={`#${page.toLowerCase()}`} onClick={clicked}>
               {page}
             </Nav.Link>
           </Nav.Item>
         );
       })}
-      <Nav.Item id={4}>
+      <Nav.Item key={4}>
         <Nav.Link
           href={Resume}
           onClick={clicked}

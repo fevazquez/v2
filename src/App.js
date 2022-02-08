@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useOnClickOutside } from "./hooks";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 
-import { SplashScreen, NavBar, HomePage } from "./components";
+import { SplashScreen, NavBar, HomePage, NotFound } from "./components";
 
 import "./scss/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,10 +33,14 @@ function App() {
       {isLoading ? (
         <SplashScreen />
       ) : (
-        <>
+        <BrowserRouter>
           <NavBar open={open} setOpen={setOpen} node={node} menuId={menuId} />
-          <HomePage open={open} />
-        </>
+          <Routes>
+            <Route path="/" element={<HomePage open={open} />} />
+            <Route path="/projects" element={<div>Work in progress</div>} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
       )}
     </ThemeProvider>
   );

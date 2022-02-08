@@ -4,7 +4,7 @@ import { StyledSideElement } from "./Side.styled";
 
 const Side = ({ children, orientation }) => {
   const [isMounted, setIsMounted] = useState(false);
-  const loaderDelay = 2000;
+  const loaderDelay = 1000;
   const isHome = true;
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Side = ({ children, orientation }) => {
         {isMounted && (
           <CSSTransition
             classNames={isHome ? "fade" : ""}
-            timeout={loaderDelay ? 2000 : 0}
+            timeout={loaderDelay ? 1000 : 0}
           >
             {children}
           </CSSTransition>

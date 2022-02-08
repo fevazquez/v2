@@ -51,10 +51,10 @@ const NavBar = ({ open, setOpen, node, menuId }) => {
             </Nav>
           ) : (
             <Nav>
-              {pages.map((page, index) => {
+              {pages.map((page, idx) => {
                 return (
-                  <Nav.Item key={index}>
-                    <Nav.Link href={`#${page.toLowerCase()}`}>{page}</Nav.Link>
+                  <Nav.Item key={idx}>
+                    <Nav.Link href={`/#${page.toLowerCase()}`}>{page}</Nav.Link>
                   </Nav.Item>
                 );
               })}
