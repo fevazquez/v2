@@ -8,7 +8,6 @@ const Contact = () => {
       <h2 className="numbered-heading overline">Contact</h2>
       <h2 className="title">Reach Out!</h2>
       <p>
-        I am always looking out for new opportunities, so my inbox is open.
         Whether you have a question or just stopping by to say hi, Ill do my
         best to get back to you!
       </p>

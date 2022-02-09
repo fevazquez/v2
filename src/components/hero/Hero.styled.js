@@ -68,4 +68,18 @@ export const StyledPic = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+  animation: blurFadeIn 2s ease-in backwards;
+  animation-delay: 0.5s;
+
+  @keyframes blurFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    20%,
+    75% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 `;

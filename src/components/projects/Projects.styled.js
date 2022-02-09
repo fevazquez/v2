@@ -4,6 +4,11 @@ export const StyledProjectsSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .bigButton {
+    margin: 10em;
+    ${({ theme }) => theme.bigButton};
+  }
 `;
 
 export const StyledProjectsGrid = styled.ul`

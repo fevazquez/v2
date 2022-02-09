@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import { StyledProjectsSection, StyledProject } from "./Projects.styled";
 
 import { Icon } from "../icons";
@@ -82,6 +82,9 @@ const Projects = () => {
             </StyledProject>
           );
         })}
+      {/* <Link to="/projects" className="bigButton">
+        Additonal Projects
+      </Link> */}
     </StyledProjectsSection>
   );
 };

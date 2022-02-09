@@ -1,20 +1,21 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useOnClickOutside } from "./hooks";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 
-import { SplashScreen, NavBar, HomePage, NotFound } from "./components";
+import { NavBar, HomePage, Archive, NotFound } from "./components";
 
 import "./scss/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [open, setOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
 
   const menuId = "main-menu";
   const node = useRef();
@@ -30,18 +31,20 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      {isLoading ? (
-        <SplashScreen />
+
+      {!isLoading || location.pathname !== "/" ? (
+        <NavBar open={open} setOpen={setOpen} node={node} menuId={menuId} />
       ) : (
-        <BrowserRouter>
-          <NavBar open={open} setOpen={setOpen} node={node} menuId={menuId} />
-          <Routes>
-            <Route path="/" element={<HomePage open={open} />} />
-            <Route path="/projects" element={<div>Work in progress</div>} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <></>
       )}
+      <Routes>
+        <Route
+          path="/"
+          element={<HomePage isLoading={isLoading} open={open} />}
+        />
+        {/* <Route path="/projects" element={<Archive />} /> */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </ThemeProvider>
   );
 }

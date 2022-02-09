@@ -1,5 +1,6 @@
 import React from "react";
 
+import SplashScreen from "./SplashScreen";
 import Hero from "./hero";
 import Socials from "./socials";
 import Email from "./email";
@@ -11,18 +12,24 @@ import Footer from "./footnote";
 
 import "../scss/HomePage.scss";
 
-const HomePage = () => {
+const HomePage = ({ isLoading }) => {
   return (
-    <div className="main-container">
-      <Hero />
-      <Socials />
-      <Email />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      {isLoading ? (
+        <SplashScreen />
+      ) : (
+        <div className="main-container">
+          <Hero />
+          <Socials />
+          <Email />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
+      )}
+    </>
   );
 };
 
