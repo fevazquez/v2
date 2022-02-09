@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { CSSTransition } from "react-transition-group";
 import Menu from "./Menu";
 import MobileMenu from "./MobileMenu";
 import { StyledJobsSection } from "./Experience.styled";
