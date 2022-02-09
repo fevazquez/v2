@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { StyledProjectsSection, StyledProject } from "./Projects.styled";
 
 import { Icon } from "../icons";
@@ -10,7 +9,7 @@ const Projects = () => {
       summary:
         "Constructed a basic pipelined CPU using Verilog that would execute basic arithmetic algorithms to support a self designed ISA",
       technologies: ["Intel Quartus Prime", "Verilog", "ModelSim"],
-      img: "https://lh3.googleusercontent.com/GCV2QR33j_pOIqt_yM_GR98CxU2aGC1YlVL8FapAUsXIXBmHaHgtDaMvyEyEYFZ3d31P73Ycxd_e5h5ls2pXKEUllU3wKdrcKwRjMJZyfjPqjlsrhwrgArngMXOibr7jY-pSJ8ff_y9IR_50SVZrFBxdwoWGG0n8hIBJFvC1-O1i3NnfSw4p93B2YQWmU8YLbn55PfIqPAJ-Ii7orLac1f0Y26ZSnZ9tNip2UmN53RMhiySkBd7ES2MBtlG2p7Nw75EuQDrRmlj6dN4MF4iJV_oKatZINdG0RrgWyei5jprXGsj_F2ddLR9_UHu0pl7Z0uLiJmQS3homxKo90p5lNTlXdglKWLe8VHZPWoXIiSF4jlISQBV6JGwTSPPJ5i4D8mjaf7SxnvRE4qs9Cw_q1qPL1pWlF0a-xN03j3H7nFrl7NTNHdxmpsHX_b06ioWPq_V6A0Ru0pe5Y1jjAYpBRdILOaSjEHjEOPCIV6I0LNqsYbcVn-XXcTSN9bgB6LZPAEECKUbjw5U6EMd0bhYufRYczeR2CGppaT2Bht6EopRrLtSiZveBXwbEPRjqFMTO7mIebeON8uI_u5jP2RDsssHeuj6cKFELpaCpfX_QO-fkokDnEFxK5lxVLC3dhK_wHesJKlKzXgijWMaGSLPbW2Z-NE2umQbXqqPKClj09opcBnfSGitwVx9-6WFH6bQiWQeyokN65oWJ6EMmS5n68A=w1725-h1241-no?authuser=2",
+      img: "https://lh3.googleusercontent.com/pw/AM-JKLVWoMEvC63A546GFFlHP9qrAp_Ox52TgoV-PIxuPaqrdIucXQyrAVuYiOpnd13FMf9w7BBx_ulxXpgXT40z41q6cZDFgjlOGwf_lckk-qj5D-QyCzartWb27cs_qRV_yHXMcQcpykeAmMTn6-WWq18=w1678-h1208-no?authuser=1",
       link: "https://github.com/fevazquez/Pipelined-CPU",
     },
     {
@@ -18,7 +17,7 @@ const Projects = () => {
       summary:
         "Worked with a team to develop an open-source Chrome extension to manage tabs for productivity purposes",
       technologies: ["React", "Node.js", "Circle CI"],
-      img: "https://lh3.googleusercontent.com/oL4EMU84WwjJKLrJapfPnDg1hmMnjC7aA-BekFGV66uwYN4NNJw_16UmREY1vmPsxPbMRu3jNWhZwTsvBzYGnXDF38K3PwLScm9c10hx_BuNQX7IdzRjJEVndKnvP8HllqgdMzCW0dfUDl9Let2QZtCvdHrVqe96mBQ6BksEqOhWy_gWAyQJB1WGsLdJyLfD6Rk1SbuE6pcKbS0uzcLJUij3ELItyFTkumDaqxWg8oP8-R71BZ3mPuzZ_bNrDHIaXqwE7gCltvOKZMKTv1ZkwO2I5JxD2_24t9k7TCjkStEVsn-JPBQGwkhGtmcfI9qEPT7ZPbQ6yOe7Qoz6-y-OezTQ9G2ccNLM6dsln-ng7jo7eQkqHJzwBAxT4XnstlMeuy55joEO3dpATPN-sBpE6p7qghxsCTFkxkTv_mxuzmBT_Af0FELnqC7JG5LapOsNMEYrRPWoZmuJ2lyZ73k5sAZgHAUtSbx6vh_dJEoejoTraoho2HNVCfvPm8WKIPOxMFGf0W3I1ZD3lbpHzTJIiPmwim-xUldFyriYQKbDtS5Af3nER6VA1g28IJIqxYJ1xG61eFwick0DodqiidY53Y9JNHAw1J7gGKg8WH8wNbqfHv8BMnEHXT6ffBo_lNQ1KqvviRZgh4Yzd08iL7FBqW22ocBkOO5FRw2gOv8kE3CG_XN-z3S7IjrETlOED3ZSzFmlgbkSd2RSNMB_SOjseg=w1508-h986-no?authuser=2",
+      img: "https://lh3.googleusercontent.com/pw/AM-JKLXpj2xtFxs1Ctw6l8H6dnP3sPOHro1Q6D3YQzcICXU26kDNLBPZJ006nYg9TrgLiCnXzUv-pvt-GwZx8gnRJl_hWoSUt2qUPB7cHMc0v_aELrddaaxmvekTbgJLLcYcS7jo368g7SRCkI_DlwhV-Zk=w1508-h986-no?authuser=1",
       link: "https://github.com/cse112-sp20/Team-Potato",
     },
     {
@@ -26,7 +25,7 @@ const Projects = () => {
       summary:
         "Worked with a team to develop a mobile application for finding and advertising student organizations",
       technologies: ["Java", "Android Studio", "Gradle"],
-      img: "https://lh3.googleusercontent.com/7Mn1Tpiys8h5tCeZ9MRDyroIgI0h7fgXDTRtIEvWWpf7__cJAdXuf-Iyc3yEmWbKmtPcQdtQelk3arbqYuylywADUgHHwpmL8tU3MRaMwN00R4XtZqUJPaFtembQ38kP3ucwCOSieB6ZFsOgj-3Z1SGMpvsfK5LtUbX3arywfn0xX_DSfmeOb_IHyj-7_Vvv33RAlaYEEKN0c9G-ry9hq55kI59a5pgLJ8QO4__XDCDjsIDDgaeX6cclsHI_tFngs2vu_G72fgvn0xCzlbCecTMuSHblXO3ZUrP8ww-EsEJXovDLYuX-UMay1KfWTVRvceGKt6PKvqQS20PfbkTk_uXk_SSxNYc8P1y1nM0A7X8kfIMPjxFyH9NmnT80zrFHWKP-DLmI6g07wHd58jLUugme1uj-LHZvwHF60pONrWFqA1UVuhvPpKrkkq3QrvQeP3GfSOB0aNZen7Ss3PpR3kax9g9wplRRvZB06RgyGdCUZm9GXASCJfCl1vpxFdDVK3hm5KfuzoluLdIyNtaRdF0lJznMI7DytOPeV6BFpfJQSlQ_viPUljNBlNwoV8BXbtHc3apUjlNMzW0AwNS_4C6TBcH5NnpwWDI7m5MYSS7IX96JNQWfTvXSB1BZBrmVSbUI4JkKV2cOI7NQyCIib9pRCjWR-eiAIwLzbvPf1ZmyBvN0_7ad5poIo6Ih9fN6V1v6ivCwFCMXTNMbqj1X0g=w1941-h1256-no?authuser=2",
+      img: "https://lh3.googleusercontent.com/pw/AM-JKLV3f_9kPjsvHvNpmRIeXqP4Wrfhikfn8eRa7PT2hq2UUeFiPkEBNP9m2m1lzB7uawuida24Ug1g6yksLPB0u7ld6xTTop6v6SGo1QTQ6b-Pwza3pKXwxHhs_obOnsbIXN12-d_DSo6I64sPJ-IKETw=w1678-h1086-no?authuser=1",
       link: "https://github.com/jamesbasa/TryClubs",
     },
     // {
