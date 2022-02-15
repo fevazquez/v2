@@ -2,6 +2,7 @@ import React from "react";
 
 import { Icon } from "../icons";
 import { StyledFooter, StyledSocialLinks, StyledCredit } from "./Footer.styled";
+
 const Footer = () => {
   let socialMedia = [
     {

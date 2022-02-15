@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const StyledProjectsSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
 
   .bigButton {
     margin: 10em;
@@ -205,60 +205,83 @@ export const StyledProject = styled.li`
       }
     }
   }
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    outline: 0;
+
+    &:after {
+      top: 15px;
+      left: 15px;
+    }
+  }
+
   .project-image {
     grid-column: 6 / -1;
     grid-row: 1 / -1;
     position: relative;
     z-index: 1;
+
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.25;
-    }
-    &:hover,
-    &:focus {
-      background: transparent;
-      outline: 0;
-      &:after {
-        top: 15px;
-        left: 15px;
-      }
-    }
-    .img {
-      @media (max-width: 768px) {
-        object-fit: cover;
-        width: auto;
-        height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(50%);
-      }
-      img {
-        max-height: 400px;
-        border-radius: 5px;
-      }
+
+      border-radius: 5px;
+      border: solid 1px var(--main);
     }
 
-    // colored picture trail
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      transition: var(--transition);
+    .img {
+      border-radius: var(--border-radius);
+
+      @media (max-width: 768px) {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%) contrast(1) brightness(50%);
+      }
+
+      // img {
+      //   max-height: 400px;
+      // }
     }
-    &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--black);
-      mix-blend-mode: screen;
-    }
-    &:after {
-      border: 2px solid var(--main);
-      top: 20px;
-      left: 20px;
-      z-index: -1;
+
+    // colored picture trail for desktop
+    @media (min-width: 769px) {
+      &:hover,
+      &:focus {
+        background: transparent;
+        outline: 0;
+
+        &:after {
+          top: 15px;
+          left: 15px;
+        }
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition: var(--transition);
+      }
+      &:before {
+        top: 0;
+        left: 0;
+        background-color: var(--black);
+        mix-blend-mode: screen;
+      }
+      &:after {
+        border: 2px solid var(--main);
+        top: 20px;
+        left: 20px;
+        z-index: -1;
+      }
     }
   }
 `;

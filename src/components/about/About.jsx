@@ -2,6 +2,7 @@ import React from "react";
 
 import selfImage from "../../img/self.jpg";
 import { StyledAboutSection, StyledText, StyledPic } from "./About.styled";
+
 const About = () => {
   const skills = [
     "JavaScript",

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+
 import { Container, Nav, Navbar } from "react-bootstrap";
 import FocusLock from "react-focus-lock";
 
-import PortfolioLogo from "../img/logo.svg";
-import Resume from "../Vazquez_Fernando.pdf";
-
 import Burger from "./burger";
 import Menu from "./menu";
+
+import PortfolioLogo from "../img/logo.svg";
+import Resume from "../Vazquez_Fernando.pdf";
 
 import "../scss/NavBar.scss";
 

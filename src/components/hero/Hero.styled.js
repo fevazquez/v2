@@ -24,10 +24,24 @@ export const StyledHero = styled.section`
   padding: 0;
 
   @media (max-width: 480px) and (min-height: 700px) {
-    padding-bottom: 10vh;
+    padding-bottom: 25vh;
     .heroText {
       padding-top: 0;
+      animation: blurFadeIn 2s ease-in backwards;
+      animation-delay: 0.8s;
     }
+
+    @keyframes blurFadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      20%,
+      75% {
+        opacity: 1;
+        transform: scale(1);
+      }
+  }
   }
 
   h1 {

@@ -1,5 +1,6 @@
 import React from "react";
 import { bool, func } from "prop-types";
+
 import { Squash } from "hamburger-react";
 
 const Burger = ({ open, setOpen, ...props }) => {

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { StyledContactSection } from "./Contact.styled";
+
 const Contact = () => {
   const email = "f4vazquez@gmail.com";
   return (

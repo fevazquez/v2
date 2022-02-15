@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import { StyledProjectsSection, StyledProject } from "./Projects.styled";
 
 import { Icon } from "../icons";
+
 const Projects = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 760) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  // create an event listener
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  });
+
   const projects = [
     {
       title: "Basic Computer Processing Unit",
@@ -10,6 +29,8 @@ const Projects = () => {
         "Constructed a basic pipelined CPU using Verilog that would execute basic arithmetic algorithms to support a self designed ISA",
       technologies: ["Intel Quartus Prime", "Verilog", "ModelSim"],
       img: "https://lh3.googleusercontent.com/pw/AM-JKLVWoMEvC63A546GFFlHP9qrAp_Ox52TgoV-PIxuPaqrdIucXQyrAVuYiOpnd13FMf9w7BBx_ulxXpgXT40z41q6cZDFgjlOGwf_lckk-qj5D-QyCzartWb27cs_qRV_yHXMcQcpykeAmMTn6-WWq18=w1678-h1208-no?authuser=1",
+      mobile_img:
+        "https://lh3.googleusercontent.com/pw/AM-JKLUbN_FYbrOycQbXxfoCI-EDr_2TfGXAI97QiAuAy7u4MOshrzCiqGGHDSdgedUuvwUHPVo-44mhO2yx5e_IkrU0Lqhst7h-AsQkhZGToCXd39c6wKb5SMGtG3QgM5nA91YojNQtjpnmkazlmfopZ4I=w1678-h1035-no?authuser=1",
       link: "https://github.com/fevazquez/Pipelined-CPU",
     },
     {
@@ -18,6 +39,8 @@ const Projects = () => {
         "Worked with a team to develop an open-source Chrome extension to manage tabs for productivity purposes",
       technologies: ["React", "Node.js", "Circle CI"],
       img: "https://lh3.googleusercontent.com/pw/AM-JKLXpj2xtFxs1Ctw6l8H6dnP3sPOHro1Q6D3YQzcICXU26kDNLBPZJ006nYg9TrgLiCnXzUv-pvt-GwZx8gnRJl_hWoSUt2qUPB7cHMc0v_aELrddaaxmvekTbgJLLcYcS7jo368g7SRCkI_DlwhV-Zk=w1508-h986-no?authuser=1",
+      mobile_img:
+        "https://lh3.googleusercontent.com/pw/AM-JKLX9XbRE6yC3xSCeLxC8t7lnj_s7JLkWksn54WZ0PvilhYkHZVWf84CtLD0zGSldYFLWr5kViI4xut5eNT_Q7mKW1EjcP5xCFvfiBy8alK49ruyU8E9mgEbwKaWpiDcVTReKx7MPAF_jrCSjbhaUQh8=w1273-h796-no?authuser=1",
       link: "https://github.com/cse112-sp20/Team-Potato",
     },
     {
@@ -26,6 +49,8 @@ const Projects = () => {
         "Worked with a team to develop a mobile application for finding and advertising student organizations",
       technologies: ["Java", "Android Studio", "Gradle"],
       img: "https://lh3.googleusercontent.com/pw/AM-JKLV3f_9kPjsvHvNpmRIeXqP4Wrfhikfn8eRa7PT2hq2UUeFiPkEBNP9m2m1lzB7uawuida24Ug1g6yksLPB0u7ld6xTTop6v6SGo1QTQ6b-Pwza3pKXwxHhs_obOnsbIXN12-d_DSo6I64sPJ-IKETw=w1678-h1086-no?authuser=1",
+      mobile_img:
+        "https://lh3.googleusercontent.com/pw/AM-JKLWA18Wu2wNu0wBy5DKT9L9Ga6iUvm0sfJKd1tq4f8X6m3DWY0tik5n1s89JV79tdWWrsw6JJ0fIGx1EQ5SmTZfdlzcNZf-cnTjCdY7wqzFkGV0dPjDsqfdSzOny0vjhTjSWTfsmLlKKX4y6WD6ujAc=w1678-h825-no?authuser=1",
       link: "https://github.com/jamesbasa/TryClubs",
     },
     // {
@@ -45,6 +70,7 @@ const Projects = () => {
     //   link: "https://colab.research.google.com/drive/12ghS-lpvIXCMi_6rnVBA3ZUlIEcjrH6Y?usp=sharing",
     // },
   ];
+
   return (
     <StyledProjectsSection id="projects">
       <h2 className="numbered-heading">Projects I've Worked On</h2>
@@ -73,10 +99,17 @@ const Projects = () => {
               </div>
 
               <div className="project-image">
-                <picture className="img">
-                  <source type="image/avif" srcSet={project.img} />
-                  <img src={project.img} alt={project.title} />
-                </picture>
+                {isMobile ? (
+                  <picture className="img">
+                    <source type="image/avif" srcSet={project.mobile_img} />
+                    <img src={project.mobile_img} alt={project.title} />
+                  </picture>
+                ) : (
+                  <picture className="img">
+                    <source type="image/avif" srcSet={project.img} />
+                    <img src={project.img} alt={project.title} />
+                  </picture>
+                )}
               </div>
             </StyledProject>
           );

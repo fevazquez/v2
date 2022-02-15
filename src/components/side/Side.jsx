@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { string } from "prop-types";
+
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { StyledSideElement } from "./Side.styled";
 
@@ -27,5 +29,9 @@ const Side = ({ children, orientation }) => {
     </StyledSideElement>
   );
 };
+
+Side.propTypes = {
+  orientation: string.isRequired,
+}
 
 export default Side;

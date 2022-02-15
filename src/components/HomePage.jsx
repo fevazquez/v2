@@ -1,4 +1,5 @@
 import React from "react";
+import { bool } from "prop-types";
 
 import SplashScreen from "./SplashScreen";
 import Hero from "./hero";
@@ -32,5 +33,9 @@ const HomePage = ({ isLoading }) => {
     </>
   );
 };
+
+HomePage.propTypes = {
+  isLoading: bool.isRequired,
+}
 
 export default HomePage;
