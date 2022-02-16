@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   const [open, setOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
 
   const menuId = "main-menu";
