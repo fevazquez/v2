@@ -233,54 +233,63 @@ export const StyledProject = styled.li`
     }
 
     .img {
-      border-radius: var(--border-radius);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      oveflow: hidden;
+
+      border-radius: 5px;
+      padding: 20px;
+      height: 400px;
+      background-color: var(--black);
+
+      img {
+        height: 350px;
+        border-radius: 5px;
+      }
 
       @media (max-width: 768px) {
-        width: auto;
-        height: 100%;
         object-fit: cover;
+        width: 100%;
+        height: auto;
         filter: grayscale(100%) contrast(1) brightness(50%);
       }
 
-      // img {
-      //   max-height: 400px;
-      // }
-    }
+      // colored picture trail for desktop
+      @media (min-width: 769px) {
+        &:hover,
+        &:focus {
+          outline: 0;
 
-    // colored picture trail for desktop
-    @media (min-width: 769px) {
-      &:hover,
-      &:focus {
-        background: transparent;
-        outline: 0;
-
-        &:after {
-          top: 15px;
-          left: 15px;
+          &:after {
+            top: 15px;
+            left: 15px;
+          }
         }
-      }
 
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        transition: var(--transition);
-      }
-      &:before {
-        top: 0;
-        left: 0;
-        background-color: var(--black);
-        mix-blend-mode: screen;
-      }
-      &:after {
-        border: 2px solid var(--main);
-        top: 20px;
-        left: 20px;
-        z-index: -1;
+        &:before,
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          transition: var(--transition);
+        }
+        &:before {
+          top: 0;
+          left: 0;
+          background-color: var(--black);
+          mix-blend-mode: screen;
+          z-index: 1;
+        }
+        &:after {
+          border: 2px solid var(--main);
+          top: 20px;
+          left: 20px;
+          z-index: -1;
+        }
       }
     }
   }

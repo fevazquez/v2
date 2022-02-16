@@ -135,7 +135,7 @@ export const GlobalStyles = createGlobalStyle`
 
   .big-heading {
     margin: 0;
-    font-size: clamp(40px, 7vw, 65px);
+    font-size: clamp(38px, 7vw, 65px);
   }
 
   .numbered-heading {

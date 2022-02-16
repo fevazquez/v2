@@ -10,8 +10,10 @@ export const StyledHero = styled.section`
     }
   }
 
-  .heroText {
-    padding-top: 7em;
+  @media (min-width: 768px) {
+    .heroText {
+      padding-top: 7em;
+    }
   }
 
   display: flex;
@@ -24,7 +26,10 @@ export const StyledHero = styled.section`
   padding: 0;
 
   @media (max-width: 480px) and (min-height: 700px) {
-    padding-bottom: 25vh;
+    padding-bottom: 10vh;
+  }
+
+  @media (max-width: 480px) {
     .heroText {
       padding-top: 0;
       animation: blurFadeIn 2s ease-in backwards;
@@ -34,14 +39,14 @@ export const StyledHero = styled.section`
     @keyframes blurFadeIn {
       0% {
         opacity: 0;
-        transform: scale(0.9);
+        transform: scale(0.6);
       }
       20%,
       75% {
         opacity: 1;
         transform: scale(1);
       }
-  }
+    }
   }
 
   h1 {
@@ -65,15 +70,6 @@ export const StyledHero = styled.section`
   p {
     margin: 20px 0 0;
     max-width: 540px;
-  }
-
-  .email-link {
-    // ${({ theme }) => theme.bigButton};
-    margin-top: 50px;
-  }
-
-  .email-link:hover {
-    color: var(--white);
   }
 `;
 

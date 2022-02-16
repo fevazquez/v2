@@ -12,9 +12,9 @@ import { NavBar, HomePage, Archive, NotFound } from "./components";
 import "./scss/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+const App = () => {
   const [open, setOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
 
   const menuId = "main-menu";
@@ -47,6 +47,6 @@ function App() {
       </Routes>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

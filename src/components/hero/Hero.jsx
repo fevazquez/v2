@@ -21,9 +21,9 @@ const Hero = () => {
   const intro_body = (
     <>
       <p>
-        I develop things for the web and love building and designing both
-        hardware and software components. Currently, I am focused on DevOps
-        operations to deliver high quality products to clients over at{" "}
+        I develop things for the web and also enjoy working with hardware.
+        Currently, I am focused on DevOps operations to deliver high quality
+        products to clients over at{" "}
         <a href="https://www.nisum.com/" target="_blank" rel="noreferrer">
           Nisum
         </a>

@@ -99,17 +99,10 @@ const Projects = () => {
               </div>
 
               <div className="project-image">
-                {isMobile ? (
-                  <picture className="img">
-                    <source type="image/avif" srcSet={project.mobile_img} />
-                    <img src={project.mobile_img} alt={project.title} />
-                  </picture>
-                ) : (
-                  <picture className="img">
-                    <source type="image/avif" srcSet={project.img} />
-                    <img src={project.img} alt={project.title} />
-                  </picture>
-                )}
+                <picture className="img">
+                  <source type="image/avif" srcSet={project.mobile_img} />
+                  <img src={project.mobile_img} alt={project.title} />
+                </picture>
               </div>
             </StyledProject>
           );
