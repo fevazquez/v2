@@ -6,6 +6,7 @@ export { default as HomePage } from "./HomePage";
 export { default as Side } from "./side";
 export { default as Socials } from "./socials";
 export { default as Email } from "./email";
+export { default as Hero } from "./hero";
 export { default as About } from "./about";
 export { default as Experience } from "./experience";
 export { default as Footer } from "./footnote";
