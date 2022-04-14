@@ -11,7 +11,7 @@
   </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e62b67af-8a25-47c1-96b9-38a946fb71e2/deploy-status)](https://app.netlify.com/sites/vigilant-elion-a37e60/deploys)
-[![CircleCI](https://circleci.com/gh/fevazquez/v2/tree/dev.svg?style=svg)](https://app.circleci.com/pipelines/github/fevazquez/v2?branch=dev&filter=all)
+[![CircleCI](https://circleci.com/gh/fevazquez/v2.svg?style=svg)](https://app.circleci.com/pipelines/github/fevazquez/v2?branch=dev&filter=all)
 ![Last Commit](https://img.shields.io/github/last-commit/fevazquez/v2)
 
 </div>
