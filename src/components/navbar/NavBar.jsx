@@ -6,10 +6,10 @@ import FocusLock from "react-focus-lock";
 import Burger from "./burger";
 import Menu from "./menu";
 
-import PortfolioLogo from "../img/logo.svg";
-import Resume from "../Vazquez_Fernando.pdf";
+import PortfolioLogo from "../../img/logo.svg";
+import Resume from "../../Vazquez_Fernando.pdf";
 
-import "../scss/NavBar.scss";
+import "../../scss/NavBar.scss";
 
 const NavBar = ({ open, setOpen, node, menuId }) => {
   const [isMobile, setIsMobile] = useState(false);

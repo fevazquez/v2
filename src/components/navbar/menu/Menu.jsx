@@ -3,10 +3,10 @@ import React from "react";
 import { bool } from "prop-types";
 import { Nav } from "react-bootstrap";
 
-import Resume from "../../Vazquez_Fernando.pdf";
+import Resume from "../../../Vazquez_Fernando.pdf";
 
 import { StyledMenu } from "./Menu.styled";
-import "../../scss/NavBar.scss";
+import "../../../scss/NavBar.scss";
 
 const Menu = ({ open, ...props }) => {
   const isHidden = open ? true : false;
