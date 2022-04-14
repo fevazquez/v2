@@ -4,8 +4,8 @@ import { useOnClickOutside } from "./hooks";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./global";
-import { theme } from "./theme";
+import { GlobalStyles } from "./styles/global";
+import { theme } from "./styles/theme";
 
 import { NavBar, HomePage, Archive, NotFound } from "./components";
 

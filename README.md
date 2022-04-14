@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="./src/img/logo.svg" width=200 height=200>
   <h1>fernandovazquez.dev</h1>
@@ -11,26 +10,103 @@
     <a href="https://github.com/fevazquez/v1" target="_blank">v1</a>  
   </p>
 
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/e62b67af-8a25-47c1-96b9-38a946fb71e2/deploy-status)](https://app.netlify.com/sites/vigilant-elion-a37e60/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e62b67af-8a25-47c1-96b9-38a946fb71e2/deploy-status)](https://app.netlify.com/sites/vigilant-elion-a37e60/deploys)
+[![CircleCI](https://circleci.com/gh/fevazquez/v2/tree/dev.svg?style=svg)](https://app.circleci.com/pipelines/github/fevazquez/v2?branch=dev&filter=all)
+![Last Commit](https://img.shields.io/github/last-commit/fevazquez/v2)
+
 </div>
 
-## Setup
-To set up your work environmnet begin by cloning the repsitory
+<br />
 
-```git clone https://github.com/fevazquez/v2.git```
+<!-- Table of Contents -->
 
-In the project directory, run
+# :notebook_with_decorative_cover: Table of Contents
 
-```npm install```
+- [About the Project](#star2-about-the-project)
+  - [Tech Stack](#space_invader-tech-stack)
+  - [Features](#dart-features)
+  - [Color Reference](#art-color-reference)
+- [Getting Started](#toolbox-getting-started)
+  - [Run Locally](#running-run-locally)
+- [Contact](#handshake-contact)
+- [Acknowledgements](#gem-acknowledgements)
 
-The avaialble scripts are: 
+<!-- About the Project -->
 
-### `npm start`
+## :star2: About the Project
+
+<!-- TechStack -->
+
+### :space_invader: Tech Stack
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://getbootstrap.com">Bootstrap</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://www.netlify.com">Netlify</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>DevOps</summary>
+  <ul>
+    <li><a href="https://www.docker.com/">Docker</a></li>
+    <li><a href="https://circleci.com/">CircleCLI</a></li>
+  </ul>
+</details>
+
+<!-- Color Reference -->
+
+### :art: Color Reference
+
+| Color           | Hex                                                              |
+| --------------- | ---------------------------------------------------------------- |
+| Primary Color   | ![#1b1b1b](https://via.placeholder.com/10/1b1b1b?text=+) #1b1b1b |
+| Secondary Color | ![#141414](https://via.placeholder.com/10/141414?text=+) #141414 |
+| Accent Color    | ![#32cd32](https://via.placeholder.com/10/32cd32?text=+) #32cd32 |
+| Text Color      | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) #8892b0 |
+
+<!-- Run Locally -->
+
+### :running: Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/fevazquez/v2.git
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm test`
+```bash
+  npm test
+```
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -42,13 +118,19 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.
 
-### `npm run eject`
+<!-- Contact -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## :handshake: Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Fernando Vazquez - f4vazquez@gmail.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Project Link: [fernandovazquez.dev](https://www.fernandovazquez.dev)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- Acknowledgments -->
 
+## :gem: Acknowledgements
+
+- [brittanychiang.com](https://github.com/bchiang7/v4)
+- [Shields.io](https://shields.io/)
+- [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
+- [Readme Template](https://github.com/Louis3797/awesome-readme-template)
