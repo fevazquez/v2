@@ -14,6 +14,8 @@
 [![CircleCI](https://circleci.com/gh/fevazquez/v2.svg?style=svg)](https://app.circleci.com/pipelines/github/fevazquez/v2?branch=dev&filter=all)
 ![Last Commit](https://img.shields.io/github/last-commit/fevazquez/v2)
 
+<img src="./src/img/app_screenshot.png" />
+
 </div>
 
 <br />
