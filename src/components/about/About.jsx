@@ -30,20 +30,20 @@ const About = () => {
             <p>
               Hello! My name is Fernando and I am a 2021 UC San Diego computer
               engineering graduate who is highly interested in machine learning,
-              web development, and printed circuit board designing. My curiosity
-              in computer science and engineering began back in high school when
-              I was sitting in my algebra class, when I was introduced to the P
-              vs NP problem.
+              web development, and devops. My curiosity in computer science and
+              engineering began back in high school when I was sitting in my
+              algebra class, where I was introduced to the P vs NP problem.
             </p>
             <p>
               Since then, I have had the privilege of working as a{" "}
-              <a href="http://sopac-csrc.ucsd.edu/">research assistant</a>, and{" "}
+              <a href="http://sopac-csrc.ucsd.edu/">research assistant</a>,{" "}
               <a href="https://rocketproplab.org/">
                 a student lead avionics project
               </a>
-              . My main focus currently is on DevOps operations to deliver high
-              quality products for <a href="https://www.nisum.com/">Nisum</a>{" "}
-              clients.
+              , and a <a href="https://www.nisum.com/">devops engineer</a>. My
+              main focus currently is on software development to deliver the
+              best customer experience over at{" "}
+              <a href="https://aws.amazon.com/">Amazon AWS</a>.
             </p>
             <p>
               Here are some of the technologies I've been working with recently:

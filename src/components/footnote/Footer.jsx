@@ -1,23 +1,10 @@
 import React from "react";
 
 import { Icon } from "../icons";
+import { socialMedia } from "../../config";
 import { StyledFooter, StyledSocialLinks, StyledCredit } from "./Footer.styled";
 
 const Footer = () => {
-  let socialMedia = [
-    {
-      name: "GitHub",
-      url: "https://github.com/fevazquez",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/",
-    },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/itsfernanflow/",
-    },
-  ];
   return (
     <StyledFooter>
       <StyledSocialLinks>
