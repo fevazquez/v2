@@ -91,6 +91,9 @@ jobs:
       CC_TEST_REPORTER_ID: 939f0fd88cd52a051d35e26cca5e8e2941dca1c0fe2b2ce9771ed4791884bee5
     steps:
       - checkout
+      # Attach the build repo and test-reporter from previous job
+      - attach_workspace:
+          at: /home/circleci/project
       - run:
           # Visual check to see everything is in place
           name: Checkout Repo
