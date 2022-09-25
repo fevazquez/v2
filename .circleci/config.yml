@@ -92,6 +92,14 @@ jobs:
     steps:
       - checkout
       - run:
+          # Visual check to see everything is in place
+          name: Checkout Repo
+          command: |
+            ls -a
+            pwd
+            ls -a project/
+            rm -r project/test
+      - run:
           # Install latest npm
           name: Update npm
           command: sudo npm install -g npm@latest
