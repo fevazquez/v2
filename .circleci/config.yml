@@ -78,7 +78,7 @@ jobs:
       - run:
           # Set up selenium for python environment
           name: Selenium-setup
-          command: sudo pip install selenium
+          command: sudo pip3 install selenium
       - run:
           # Notify the test reporter that test is going to start
           name: Notify CC before tests
