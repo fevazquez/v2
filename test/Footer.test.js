@@ -34,11 +34,35 @@ test("Renders footnote details", () => {
 // Test 4
 test("Confirms clickable links", () => {
   render(<Footer />);
-  const socials = ["Github", "LinkedIn", "Instagram"];
+  const socials = [
+    {
+      name: "GitHub",
+      url: "https://github.com/fevazquez",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/",
+    },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/itsfernanflow/",
+    },
+  ];
+
   socials.forEach((item, idx) => {
-    fireEvent.click(screen.getByRole("link", item));
+    // confirms link url
+    expect(screen.getByLabelText(item.name)).toHaveAttribute("href", item.url);
+
+    // click on link
+    fireEvent.click(screen.getByLabelText(item.name));
   });
 
+  // confirms link url
+  expect(
+    screen.getByRole("link", "With inspiration from Brittany Chiang")
+  ).toHaveAttribute("href", "https://github.com/bchiang7/v4");
+
+  // click on link
   fireEvent.click(
     screen.getByRole("link", "With inspiration from Brittany Chiang")
   );
