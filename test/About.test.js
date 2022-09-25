@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { render, cleanup, screen } from "@testing-library/react";
+import { render, cleanup, fireEvent, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 import About from "../src/components/about/About";
@@ -42,14 +42,45 @@ test("Renders description", () => {
 // Test 5
 test("Renders links", () => {
   render(<About />);
-  expect(screen.getAllByRole("link", "research assistant")).toBeDefined();
-  expect(
-    screen.getAllByRole("link", "a student lead avionics project")
-  ).toBeDefined();
-  expect(screen.getAllByRole("link", "Amazon AWS")).toBeDefined();
+  expect(screen.getByText("research assistant")).toBeDefined();
+  expect(screen.getByText("a student lead avionics project")).toBeDefined();
+  expect(screen.getByText("devops engineer")).toBeDefined();
+  expect(screen.getByText("Amazon AWS")).toBeDefined();
 });
 
 // Test 6
+test("Confirms clickable links", () => {
+  render(<About />);
+
+  const jobs = [
+    {
+      title: "Amazon AWS",
+      url: "https://aws.amazon.com/",
+    },
+    {
+      title: "devops engineer",
+      url: "https://www.nisum.com/",
+    },
+    {
+      title: "research assistant",
+      url: "http://sopac-csrc.ucsd.edu/",
+    },
+    {
+      title: "a student lead avionics project",
+      url: "https://rocketproplab.org/",
+    },
+  ];
+
+  jobs.forEach((item, idx) => {
+    // confirms link url
+    expect(screen.getByText(item.title)).toHaveAttribute("href", item.url);
+
+    // click on link
+    fireEvent.click(screen.getByText(item.title));
+  });
+});
+
+// Test 7
 test("Renders tech list", () => {
   render(<About />);
   expect(
