@@ -8,7 +8,7 @@ executors:
   nodejs:
     #used for build and test coverage report
     docker:
-      - image: cimg/node:latest
+      - image: cimg/node:lts
   python:
     #user for selenium python testing
     docker:
