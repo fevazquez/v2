@@ -6,13 +6,13 @@ orbs:
 # Create multiple dockers for different job environment
 executors:
   nodejs:
-    #used for build and test coverage report
+    # Used for build and test coverage report
     docker:
       - image: cimg/node:lts
   python:
-    #user for selenium python testing
+    # Used for selenium python testing
     docker:
-      - image: cimg/python:3.7-browsers
+      - image: cimg/python:3.10.7-browsers
 
 jobs:
   build:
@@ -48,7 +48,7 @@ jobs:
           name: Check Repo
           command: ls
       - persist_to_workspace:
-          #save the build repo and test-reporter to cache
+          # Save the build repo and test-reporter to cache
           root: /home/circleci
           paths:
             - project
@@ -77,8 +77,8 @@ jobs:
             rm -r project/test
       - run:
           # Set up selenium for python environment
-          name: Selenium-setup
-          command: sudo pip3 install selenium
+          name: Selenium setup
+          command: sudo pip install selenium
       - run:
           # Notify the test reporter that test is going to start
           name: Notify CC before tests
