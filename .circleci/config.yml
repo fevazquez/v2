@@ -111,10 +111,10 @@ jobs:
 workflows:
   version: 2
   build_and_test:
-    # the order is build -> test -> upload-coverage
+    # The order is build -> test -> upload-coverage
     jobs:
       - build
-       - test:
+      - test:
           requires:
             - build
       - jest-and-upload-coverage:
