@@ -3,38 +3,32 @@ import ReactDOM from "react-dom";
 import { render, cleanup, fireEvent, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-import Socials from "../src/components/socials";
-import { socialMedia } from "../src/config";
+import Email from "../src/components/email";
 
 afterEach(cleanup);
 
 // Test 1
 test("Renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<Socials />, div);
+  ReactDOM.render(<Email />, div);
 });
 
 // Test 2
-test("Renders socials", () => {
+test("Renders email", () => {
   jest.useFakeTimers(); // used for the useEffect hook to render the complete hero
 
-  render(<Socials />);
+  render(<Email />);
   jest.advanceTimersByTime(1000);
-  socialMedia.forEach((item) => {
-    expect(screen.getByText(item.name)).toBeInTheDocument();
-  });
+  expect(screen.getByText("f4vazquez@gmail.com")).toBeInTheDocument();
 });
 
 // Test 3
-test("Renders socials clickable links", () => {
+test("Renders clickable email", () => {
   jest.useFakeTimers(); // used for the useEffect hook to render the complete hero
 
-  render(<Socials />);
+  render(<Email />);
   jest.advanceTimersByTime(1000);
-  socialMedia.forEach((item) => {
-    expect(screen.getByRole("link", { name: item.name })).toHaveAttribute(
-      "href",
-      item.url
-    );
-  });
+  expect(
+    screen.getByRole("link", { name: "f4vazquez@gmail.com" })
+  ).toHaveAttribute("href", "mailto:f4vazquez@gmail.com");
 });
