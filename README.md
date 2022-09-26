@@ -12,6 +12,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e62b67af-8a25-47c1-96b9-38a946fb71e2/deploy-status)](https://app.netlify.com/sites/vigilant-elion-a37e60/deploys)
 [![CircleCI](https://circleci.com/gh/fevazquez/v2.svg?style=svg)](https://app.circleci.com/pipelines/github/fevazquez/v2?branch=dev&filter=all)
+[![Code Climate]("https://api.codeclimate.com/v1/badges/8867f04f3e43c5c05864/test_coverage")]
 ![Last Commit](https://img.shields.io/github/last-commit/fevazquez/v2)
 
 <img src="./src/img/app_screenshot.png" />
@@ -88,7 +89,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd v2
 ```
 
 Install dependencies
