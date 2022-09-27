@@ -1,3 +1,12 @@
+export const skills = [
+  "JavaScript",
+  "React",
+  "Microsoft Azure",
+  "Docker",
+  "Kubernetes",
+  "Jenkins",
+];
+
 export const socialMedia = [
   {
     name: "GitHub",
@@ -19,7 +28,7 @@ export const jobs = [
     company: "Amazon",
     abbreviation: "Amazon",
     date: "September 2022 - Present",
-    description: "Still onboarding 😋",
+    description: "",
     url: "https://aws.amazon.com/",
   },
   {
