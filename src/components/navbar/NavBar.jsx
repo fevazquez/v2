@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import { Container, Nav, Navbar } from "react-bootstrap";
 import FocusLock from "react-focus-lock";
@@ -11,23 +11,7 @@ import Resume from "../../Vazquez_Fernando.pdf";
 
 import "../../scss/NavBar.scss";
 
-const NavBar = ({ open, setOpen, node, menuId }) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  //choose the screen size
-  const handleResize = () => {
-    if (window.innerWidth < 760) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  // create an event listener
-  useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-  });
+const NavBar = ({ open, setOpen, isMobile, node, menuId }) => {
   let pages = ["About", "Experience", "Projects", "Contact"];
 
   return (

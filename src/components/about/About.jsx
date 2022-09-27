@@ -1,17 +1,10 @@
 import React from "react";
 
+import { skills } from "../../config";
 import selfImage from "../../img/self.jpg";
 import { StyledAboutSection, StyledText, StyledPic } from "./About.styled";
 
 const About = () => {
-  const skills = [
-    "JavaScript",
-    "React",
-    "Microsoft Azure",
-    "Docker",
-    "Kubernetes",
-    "Jenkins",
-  ];
   return (
     <StyledAboutSection id="about">
       <h2 className="numbered-heading">About Me</h2>
@@ -21,7 +14,7 @@ const About = () => {
           <div className="wrapper">
             <picture className="img">
               <source type="image/avif" srcSet={selfImage} />
-              <img src={selfImage} alt="yours truly" />
+              <img src={selfImage} alt="Fernando Vazquez" />
             </picture>
           </div>
         </StyledPic>

@@ -13,7 +13,7 @@ import Footer from "./footnote";
 
 import "../scss/HomePage.scss";
 
-const HomePage = ({ isLoading }) => {
+const HomePage = ({ isLoading, isMobile }) => {
   return (
     <>
       {isLoading ? (
@@ -24,7 +24,7 @@ const HomePage = ({ isLoading }) => {
           <Socials />
           <Email />
           <About />
-          <Experience />
+          <Experience isMobile={isMobile} />
           <Projects />
           <Contact />
           <Footer />
@@ -36,6 +36,6 @@ const HomePage = ({ isLoading }) => {
 
 HomePage.propTypes = {
   isLoading: bool.isRequired,
-}
+};
 
 export default HomePage;
