@@ -28,7 +28,7 @@ export const jobs = [
     company: "Amazon",
     abbreviation: "Amazon",
     date: "September 2022 - Present",
-    description: "",
+    description: "Hardware Engineering Services!",
     url: "https://aws.amazon.com/",
   },
   {

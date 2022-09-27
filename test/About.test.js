@@ -22,7 +22,7 @@ test("Renders header", () => {
 // Test 3
 test("Renders image", () => {
   render(<About />);
-  expect(screen.getByAltText("yours truly")).toBeDefined();
+  expect(screen.getByAltText("Fernando Vazquez")).toBeDefined();
 });
 
 // Test 4

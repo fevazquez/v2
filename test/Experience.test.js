@@ -17,19 +17,19 @@ afterEach(cleanup);
 // Test 1
 test("Renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<Experience />, div);
+  ReactDOM.render(<Experience isMobile={false} />, div);
 });
 
 // Test 2
 test("Renders header", () => {
-  render(<Experience />);
+  render(<Experience isMobile={false} />);
   expect(screen.getByRole("heading", { level: 2 })).toBeDefined();
   expect(screen.getByText("My Experience")).toBeInTheDocument();
 });
 
 // Test 3
 test("Renders tab names", () => {
-  render(<Experience />);
+  render(<Experience isMobile={false} />);
   const tabs = screen.getAllByRole("tab");
   expect(tabs).toHaveLength(4);
   jobs.forEach((item) => {
@@ -41,7 +41,7 @@ test("Renders tab names", () => {
 
 // Test 4
 test("Renders role titles", () => {
-  render(<Experience />);
+  render(<Experience isMobile={false} />);
   jobs.forEach((item, idx) => {
     // Find and click on the tab
     const nextTab = screen.getByRole("tab", {
@@ -59,7 +59,7 @@ test("Renders role titles", () => {
 
 // Test 5
 test("Renders role dates", () => {
-  render(<Experience />);
+  render(<Experience isMobile={false} />);
   jobs.forEach((item, idx) => {
     // Find and click on the tab
     const nextTab = screen.getByRole("tab", {
@@ -72,7 +72,7 @@ test("Renders role dates", () => {
 
 // Test 6
 test("Renders role description", () => {
-  render(<Experience />);
+  render(<Experience isMobile={false} />);
   jobs.forEach((item, idx) => {
     // Find and click on the tab
     const nextTab = screen.getByRole("tab", {
