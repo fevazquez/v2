@@ -41,7 +41,7 @@ test("Confirms clickable links", () => {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/",
+      url: "https://www.linkedin.com/in/fernando-4-vazquez/",
     },
     {
       name: "Instagram",

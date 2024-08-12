@@ -21,7 +21,7 @@ const MobileMenu = ({ jobs }) => {
                 expandIcon={<ExpandMoreIcon />}
                 id={index}
               >
-                <StyledTypography>{job.abbreviation}</StyledTypography>
+              <StyledTypography>{job.abbreviation}</StyledTypography>
               </StyledAccordionSummary>
               <StyledAccordionDetails>
                 <Typography>

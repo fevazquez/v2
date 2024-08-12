@@ -24,7 +24,7 @@ const Hero = () => {
         Currently, I am focused on software development to deliver the best
         customer experience over at{" "}
         <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer">
-          Amazon AWS
+          Amazon Web Services
         </a>
         .
       </p>

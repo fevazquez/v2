@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useOnClickOutside } from "./hooks";
+import React, { useState, useRef } from "react";
+import { useOnClickOutside, useHandleScreenResize, useIsLoading } from "./hooks";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -14,33 +14,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   const [open, setOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
-
-  const menuId = "main-menu";
   const node = useRef();
 
-  // Verify the screen size
-  const handleResize = () => {
-    if (window.innerWidth < 760) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-  });
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-  }, []);
-
+  useIsLoading(isLoading, setIsLoading, 4000);
+  useHandleScreenResize(setIsMobile);
   useOnClickOutside(node, () => setOpen(false));
 
   return (
@@ -53,7 +33,7 @@ const App = () => {
           setOpen={setOpen}
           isMobile={isMobile}
           node={node}
-          menuId={menuId}
+          menuId={"main-menu"}
         />
       ) : (
         <></>
@@ -65,8 +45,7 @@ const App = () => {
             <HomePage isLoading={isLoading} isMobile={isMobile} open={open} />
           }
         />
-        {/* <Route path="/projects" element={<Archive />} /> */}
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} status={404} />
       </Routes>
     </ThemeProvider>
   );
