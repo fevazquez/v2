@@ -7,7 +7,7 @@ import Experience from "../src/components/experience";
 import MobileMenu from "../src/components/experience/MobileMenu";
 import { jobs } from "../src/config";
 
-const nextTabs = ["Amazon", "Nisum", "SOPAC", "RPL"];
+const nextTabs = ["AWS", "Nisum", "SOPAC", "RPL"];
 
 afterEach(cleanup);
 

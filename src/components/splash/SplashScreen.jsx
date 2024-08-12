@@ -1,7 +1,7 @@
 import React from "react";
 
-import PortfolioLogo from "../img/logo.svg";
-import "../scss/SplashScreen.scss";
+import PortfolioLogo from "../../img/logo.svg";
+import "../../scss/SplashScreen.scss";
 
 const SplashScreen = () => {
   return (

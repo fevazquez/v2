@@ -29,7 +29,7 @@ test("Renders image", () => {
 test("Renders description", () => {
   render(<About />);
   const text =
-    "Hello! My name is Fernando " +
+    "Hello! My name is Fernando, " +
     "and I am a 2021 UC San Diego computer " +
     "engineering graduate who is highly interested in machine learning, " +
     "web development, and devops. My curiosity in computer science and " +
@@ -43,9 +43,9 @@ test("Renders description", () => {
 test("Renders links", () => {
   render(<About />);
   expect(screen.getByText("research assistant")).toBeDefined();
-  expect(screen.getByText("a student lead avionics project")).toBeDefined();
+  expect(screen.getByText("apprentice avionics engineer")).toBeDefined();
   expect(screen.getByText("devops engineer")).toBeDefined();
-  expect(screen.getByText("Amazon AWS")).toBeDefined();
+  expect(screen.getByText("Amazon Web Services")).toBeDefined();
 });
 
 // Test 6
@@ -54,7 +54,7 @@ test("Confirms clickable links", () => {
 
   const jobs = [
     {
-      title: "Amazon AWS",
+      title: "Amazon Web Services",
       url: "https://aws.amazon.com/",
     },
     {
@@ -66,7 +66,7 @@ test("Confirms clickable links", () => {
       url: "http://sopac-csrc.ucsd.edu/",
     },
     {
-      title: "a student lead avionics project",
+      title: "apprentice avionics engineer",
       url: "https://rocketproplab.org/",
     },
   ];
@@ -91,10 +91,10 @@ test("Renders tech list", () => {
   const skills = [
     "JavaScript",
     "React",
-    "Microsoft Azure",
-    "Docker",
-    "Kubernetes",
-    "Jenkins",
+    "S3, CloudWatch, Lambda",
+    "AWS CDK",
+    "Perl",
+    "Ruby on Rails",
   ];
   skills.forEach((item, idx) => {
     expect(screen.getByText(item)).toBeInTheDocument();

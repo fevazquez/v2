@@ -21,7 +21,7 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Fernando and I am a 2021 UC San Diego computer
+              Hello! My name is Fernando, and I am a 2021 UC San Diego computer
               engineering graduate who is highly interested in machine learning,
               web development, and devops. My curiosity in computer science and
               engineering began back in high school when I was sitting in my
@@ -29,14 +29,14 @@ const About = () => {
             </p>
             <p>
               Since then, I have had the privilege of working as a{" "}
-              <a href="http://sopac-csrc.ucsd.edu/">research assistant</a>,{" "}
+              <a href="http://sopac-csrc.ucsd.edu/">research assistant</a>, an{" "}
               <a href="https://rocketproplab.org/">
-                a student lead avionics project
+                apprentice avionics engineer
               </a>
               , and a <a href="https://www.nisum.com/">devops engineer</a>. My
               main focus currently is on software development to deliver the
               best customer experience over at{" "}
-              <a href="https://aws.amazon.com/">Amazon AWS</a>.
+              <a href="https://aws.amazon.com/">Amazon Web Services</a>.
             </p>
             <p>
               Here are some of the technologies I've been working with recently:

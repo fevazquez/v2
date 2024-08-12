@@ -1,5 +1,5 @@
-export { default as SplashScreen } from "./SplashScreen";
-export { default as HomePage } from "./HomePage";
+export { default as SplashScreen } from "./splash";
+export { default as HomePage } from "./homepage";
 export { default as NavBar } from "./navbar";
 export { default as Side } from "./side";
 export { default as Socials } from "./socials";

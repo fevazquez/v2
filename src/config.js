@@ -1,10 +1,10 @@
 export const skills = [
   "JavaScript",
   "React",
-  "Microsoft Azure",
-  "Docker",
-  "Kubernetes",
-  "Jenkins",
+  "Ruby on Rails",
+  "S3, CloudWatch, Lambda",
+  "AWS CDK",
+  "Perl",
 ];
 
 export const socialMedia = [
@@ -14,7 +14,7 @@ export const socialMedia = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/",
+    url: "https://www.linkedin.com/in/fernando-4-vazquez/",
   },
   {
     name: "Instagram",
@@ -24,11 +24,11 @@ export const socialMedia = [
 
 export const jobs = [
   {
-    title: "Software Development Engineer",
-    company: "Amazon",
-    abbreviation: "Amazon",
+    title: "Software Development Engineer II",
+    company: "Amazon Web Servies",
+    abbreviation: "AWS",
     date: "September 2022 - Present",
-    description: "Hardware Engineering Services!",
+    description: "I work on the Infrastructure Foundational Services team. We are focused on writing modern and scalable systems to automate the provisioning and maintenance of Amazons physical server fleet. We operate across all regions in every AWS partition.",
     url: "https://aws.amazon.com/",
   },
   {
@@ -37,7 +37,7 @@ export const jobs = [
     abbreviation: "Nisum",
     date: "September 2021 - August 2022",
     description:
-      "During my time here, I wrote modern and robust code for a diverse array of internal projects using React, Javascript, Java, Docker, K8s and Springboot. I also setup CI/CD pipelines for a variety of development and production environments.",
+      "During my time here, I wrote modern and robust code for a diverse array of internal projects using React, Javascript, Docker, K8s and Springboot. I also setup CI/CD pipelines for a variety of development and production environments using Jenkins.",
     url: "https://www.nisum.com/",
   },
   {
@@ -46,7 +46,7 @@ export const jobs = [
     abbreviation: "SOPAC",
     date: "June 2019 - September 2021",
     description:
-      "Built and maintained a web application to improve and expand working with large GPS and seismic data sets including real-time collection, quality control, analysis, display, and documentation",
+      "Built and maintained a web application to improve and expand working with large GPS and seismic data sets including real-time collection, quality control, analysis, display, and documentation.",
     url: "http://sopac-csrc.ucsd.edu/",
   },
   {
@@ -55,7 +55,7 @@ export const jobs = [
     abbreviation: "RPL",
     date: "October 2018 - June 2019",
     description:
-      "Over the course of a year, I worked with 3 undergraduates to redesign, test, and implement Avionics devices to construct an engine controller unit, GPS, and a command/recovery system. We produced a BJT transistor array PCB to properly toggle relays and an INA326 instrumentation amplifier array PCB to amplify pressure transducer readings",
+      "Over the course of a year, I worked with 3 undergraduates to redesign, test, and implement Avionics devices to construct an engine controller unit, GPS, and a command/recovery system. We produced a BJT transistor array PCB to properly toggle relays and an INA326 instrumentation amplifier array PCB to amplify pressure transducer readings.",
     url: "https://rocketproplab.org/",
   },
 ];
