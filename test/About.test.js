@@ -91,7 +91,7 @@ test("Renders tech list", () => {
   const skills = [
     "JavaScript",
     "React",
-    "S3, CloudWatch, Lambda, EventBridge",
+    "S3, CloudWatch, Lambda",
     "AWS CDK",
     "Perl",
     "Ruby on Rails",

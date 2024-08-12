@@ -2,7 +2,7 @@ export const skills = [
   "JavaScript",
   "React",
   "Ruby on Rails",
-  "S3, CloudWatch, Lambda, EventBridge",
+  "S3, CloudWatch, Lambda",
   "AWS CDK",
   "Perl",
 ];
