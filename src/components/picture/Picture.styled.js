@@ -11,7 +11,7 @@ export const StyledPicture = styled.div`
 
     background-color: var(--white);
     border-radius: 10px;
-    height: 450px;
+    height: 480px;
 
     img {
       margin-top: 20px;
@@ -24,6 +24,7 @@ export const StyledPicture = styled.div`
       padding: 5px;
       font-size: 1em;
     }
+
     .portrait-details {
       display: flex;
       flex-direction: column;
