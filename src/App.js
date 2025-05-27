@@ -7,7 +7,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./styles/global";
 import { theme } from "./styles/theme";
 
-import { NavBar, HomePage, NotFound } from "./components";
+import { NavBar, HomePage, NotFound, MainQC } from "./components";
 
 import "./scss/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -45,6 +45,7 @@ const App = () => {
             <HomePage isLoading={isLoading} isMobile={isMobile} open={open} />
           }
         />
+        <Route path="/qc" element={<MainQC />} isMobile={isMobile} />
         <Route path="*" element={<NotFound />} status={404} />
       </Routes>
     </ThemeProvider>

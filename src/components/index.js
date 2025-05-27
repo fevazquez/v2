@@ -9,3 +9,6 @@ export { default as About } from "./about";
 export { default as Experience } from "./experience";
 export { default as Footer } from "./footnote";
 export { default as NotFound } from "./404";
+export { default as Timer } from "./timer";
+export { default as MainQC } from "./qc";
+export { default as Picture } from "./picture";
