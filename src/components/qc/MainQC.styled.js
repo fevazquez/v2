@@ -7,4 +7,5 @@ export const StyledMain = styled.section`
   align-items: center;
 
   text-align: center;
+  padding-top: 120px;
 `;
