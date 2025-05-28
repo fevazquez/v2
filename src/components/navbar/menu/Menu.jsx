@@ -2,6 +2,7 @@ import React from "react";
 
 import { bool } from "prop-types";
 import { Nav } from "react-bootstrap";
+import { useNavigate } from 'react-router-dom';
 
 import Resume from "../../../Vazquez_Fernando.pdf";
 
@@ -17,14 +18,20 @@ const Menu = ({ open, ...props }) => {
     props.setOpen(false);
   };
 
+  const navigate = useNavigate();
+
+  const handleNavClick = (page) => {
+    clicked();
+    const anchor = `#${page.toLowerCase()}`;
+    navigate(`/${anchor}`);
+  };
+
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
       {pages.map((page, idx) => {
         return (
           <Nav.Item key={idx}>
-            <Nav.Link href={`#${page.toLowerCase()}`} onClick={clicked}>
-              {page}
-            </Nav.Link>
+           <Nav.Link onClick={() => handleNavClick(page)}>{page}</Nav.Link>
           </Nav.Item>
         );
       })}

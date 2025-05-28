@@ -2,6 +2,7 @@ import React from "react";
 
 import { Container, Nav, Navbar } from "react-bootstrap";
 import FocusLock from "react-focus-lock";
+import { useNavigate } from 'react-router-dom';
 
 import Burger from "./burger";
 import Menu from "./menu";
@@ -12,7 +13,14 @@ import Resume from "../../Vazquez_Fernando.pdf";
 import "../../scss/NavBar.scss";
 
 const NavBar = ({ open, setOpen, isMobile, node, menuId }) => {
-  let pages = ["About", "Experience", "Projects", "Contact"];
+  const pages = ["About", "Experience", "Projects", "Contact"];
+
+  const navigate = useNavigate();
+
+  const handleNavClick = (page) => {
+    const anchor = `#${page.toLowerCase()}`;
+    navigate(`/${anchor}`);
+  };
 
   return (
     <Navbar className="fixed-top">
@@ -39,7 +47,7 @@ const NavBar = ({ open, setOpen, isMobile, node, menuId }) => {
               {pages.map((page, idx) => {
                 return (
                   <Nav.Item key={idx}>
-                    <Nav.Link href={`/#${page.toLowerCase()}`}>{page}</Nav.Link>
+                    <Nav.Link onClick={() => handleNavClick(page)}>{page}</Nav.Link>
                   </Nav.Item>
                 );
               })}
