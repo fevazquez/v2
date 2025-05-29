@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { render, cleanup, fireEvent, screen } from "@testing-library/react";
+import { MemoryRouter } from 'react-router-dom';
 import "@testing-library/jest-dom";
 
 import NavBar from "../src/components/navbar";
@@ -17,12 +18,20 @@ afterEach(cleanup);
 // Test 1
 test("Renders without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<NavBar />, div);
+  ReactDOM.render(
+    <MemoryRouter>
+      <NavBar />
+    </MemoryRouter>, 
+  div);
 });
 
 // Test 2
 test("Renders logo", () => {
-  render(<NavBar />);
+  render(
+    <MemoryRouter>
+      <NavBar />  
+    </MemoryRouter>
+  );
   const logo = screen.getAllByAltText("Fernando Vazquez");
   expect(logo).toBeDefined();
   expect(
@@ -32,7 +41,11 @@ test("Renders logo", () => {
 
 // Test 3
 test("Renders section names", () => {
-  render(<NavBar />);
+  render(
+    <MemoryRouter>
+      <NavBar />
+    </MemoryRouter>
+  );
   pages.forEach((item) => {
     expect(screen.getByText(item)).toBeInTheDocument();
   });
@@ -41,10 +54,14 @@ test("Renders section names", () => {
 
 // Test 4
 test("Renders section clickable sections", () => {
-  render(<NavBar />);
+  render(
+    <MemoryRouter>
+      <NavBar />
+    </MemoryRouter>
+  );
   pages.forEach((item) => {
-    const section = screen.getByRole("link", { name: item });
-    expect(section).toHaveAttribute("href", `/#${item.toLowerCase()}`);
+    const section = screen.getByRole("button", { name: item });
+    expect(section).toHaveAttribute("href", "#");
     fireEvent.click(section);
   });
   expect(screen.getByRole("link", { name: "Resume" })).toHaveAttribute(
@@ -64,13 +81,25 @@ test("Renders burger without crashing", () => {
 // Test 6
 test("Renders menu without crashing", () => {
   const div = document.createElement("div");
-  ReactDOM.render(<Menu open={false} />, div);
-  ReactDOM.render(<Menu open={true} />, div);
+  ReactDOM.render(
+    <MemoryRouter>
+      <Menu open={false} />
+    </MemoryRouter>, 
+  div);
+  ReactDOM.render(
+    <MemoryRouter>
+      <Menu open={true} />
+    </MemoryRouter>, 
+  div);
 });
 
 // Test 7
 test("Renders mobile section names opened", () => {
-  render(<Menu open={true} />);
+  render(
+    <MemoryRouter>
+      <Menu open={true} />
+    </MemoryRouter>
+  );
   expect(screen.getByRole("navigation")).toBeInTheDocument();
   pages.forEach((item) => {
     expect(screen.getByText(item)).toBeInTheDocument();
@@ -80,16 +109,24 @@ test("Renders mobile section names opened", () => {
 
 // Test 8
 test("Renders mobile section names closed", () => {
-  render(<Menu open={false} />);
+  render(
+    <MemoryRouter>
+      <Menu open={false} />
+    </MemoryRouter>
+  );
   expect(screen.getByRole("navigation", { hidden: true })).toBeInTheDocument();
 });
 
 // Test 9
 test("Renders mobile section clickable sections", () => {
-  render(<Menu open={true} />);
+  render(
+    <MemoryRouter>
+      <Menu open={true} />
+    </MemoryRouter>
+  );
   pages.forEach((item) => {
-    const section = screen.getByRole("link", { name: item });
-    expect(section).toHaveAttribute("href", `#${item.toLowerCase()}`);
+    const section = screen.getByRole("button", { name: item });
+    expect(section).toHaveAttribute("href", "#");
   });
   expect(screen.getByRole("link", { name: "Resume" })).toHaveAttribute(
     "href",
