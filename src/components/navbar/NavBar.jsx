@@ -20,6 +20,11 @@ const NavBar = ({ open, setOpen, isMobile, node, menuId }) => {
   const handleNavClick = (page) => {
     const anchor = `#${page.toLowerCase()}`;
     navigate(`/${anchor}`);
+
+    const section = document.getElementById(page.toLowerCase());
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
