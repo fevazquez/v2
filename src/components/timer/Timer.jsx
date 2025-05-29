@@ -20,26 +20,26 @@ const Timer = () => {
 
      // Handle negative values by borrowing
     if (seconds < 0) {
-        seconds += 60;
-        minutes--;
+      seconds += 60;
+      minutes--;
     }
     if (minutes < 0) {
-        minutes += 60;
-        hours--;
+      minutes += 60;
+      hours--;
     }
     if (hours < 0) {
-        hours += 24;
-        days--;
+      hours += 24;
+      days--;
     }
     if (days < 0) {
-        // Get days in previous month
-        const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
-        days += prevMonth.getDate();
-        months--;
+      // Get days in previous month
+      const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+      days += prevMonth.getDate();
+      months--;
     }
     if (months < 0) {
-        months += 12;
-        years--;
+      months += 12;
+      years--;
     }
 
     return { years, months, days, hours, minutes, seconds };
