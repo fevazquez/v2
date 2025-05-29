@@ -24,6 +24,11 @@ const Menu = ({ open, ...props }) => {
     clicked();
     const anchor = `#${page.toLowerCase()}`;
     navigate(`/${anchor}`);
+
+    const section = document.getElementById(page.toLowerCase());
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
